@@ -2,4 +2,4 @@
 
 Learn about  Alfred and sign-up for project updates:
 
-https://ethdenverhakcers.github.io/alfred-site/
+https://batmansbutler.github.io/alfred-site/
