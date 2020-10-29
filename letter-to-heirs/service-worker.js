@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/letter-to-heirs/precache-manifest.aa0eb787ae9f56cce265e6d86c9935b4.js"
+  "/letter-to-heirs/precache-manifest.85712adcf422908a741b04f87afc3c38.js"
 );
 
 self.addEventListener('message', (event) => {
