@@ -1,5 +1,3 @@
-# Alfred - Crypto Estate Planner - landing site
+# Endowl :owl: - Virtual Estate Planning
 
-Learn about  Alfred and sign-up for project updates:
-
-https://alfred.estate/
+Learn about Endowl and sign-up for project updates at https://endowl.com/
