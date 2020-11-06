@@ -256,6 +256,14 @@ button:focus {
     padding-bottom: 15px;
 }
 
+.content {
+    display: flex;
+    width: 80%;
+    padding: 75px 0 25px 0;
+    justify-content: center;
+    align-items: center;
+}
+
 .learn-more-btn-section {
     display: flex;
     justify-content: left;
