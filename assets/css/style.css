@@ -817,7 +817,7 @@ button:focus {
     align-items: center;
     flex-direction: column;
     border-radius: 50px;
-    padding: 55px 40px;
+    padding: 55px 20px;
 }
 
 .blog-post-card:hover {
