@@ -190,45 +190,14 @@ Sign up for updates on the team’s progress and opportunities to participate in
 						<!-- End hubspot form -->
 				</div>
 				<div class="col-lg-4 offset-lg-2 header-title-section">
-						<a class="header-subtitle" href="/blog/_posts/2020-03-01-whats-jekyll.md">Blog1</p>
-							<a href="/blog/testblog.html" class="header-title-text">Lorem ipsum description</p>
-						<br><br>
-						<a class="header-subtitle" href="/blog/testblog.html">Longer Blog Title and The Title of All Blogs</p>
-							<a class="header-title-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a urna dictum, pellentesque 
-ligula sed, commodo leo. Pellentesque vitae tellus porta, rutrum ligula a, luctus est. Nam vestibulum arcu rhoncus.</p>
+						<a class="header-subtitle" href="/blog/posts/introducing-endowl.html">Introducing Endowl</p>
+							<a class="header-title-text">Endowl's on a mission to provide an engaging way to plan your legacy.</p>
 				</div>
 			</div>
 
 	<!--See old posts -->
 			
-			<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
 			
 			<div class="footer-section">
 				<div class="footer-section-bg-graphics">
