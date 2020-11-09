@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <!-- META DATA -->
+	<title>Endowl Blog</title>
+  <meta name="description" content="Introducing Endowl 🦉">
+	<meta name="keywords" content="Endowl,estate planning,estate,inheritance,legacy,">
+	<meta name="author" content="Endowl_Inc">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<meta name="image" content="assets/images/Endowlogo.png">
+	<meta name="url" content="https://endowl.com/blog/posts/introducing-endowl.html">
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="/assets/images/bowtie-white-bg.png">
+    <!-- STYLESHEETS -->
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/accordian.css" />
+	<link rel="stylesheet" href="/assets/css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<!-- MailChimp -->
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="blog.css" />
+	<style type="text/css">
+		#mc_embed_signup{
+			/* background:#fff; */
+			/*font:14px Helvetica,Arial,sans-serif; width:100%;*/
+			clear:left;
+		}
+	</style>
+	<!-- SCRIPTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/assets/js/smoothscroll.js"></script>
+</head>
+	<body>
+	<!-- NAVBAR -->
+		<nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-header navbar-mobile">
+			<div class="navbar-container container">
+				<!-- LOGO -->
+				<div class="navbar-brand">
+				<a class="navbar-brand-logo" href="#">
+					<img src="/assets/images/Endowlhoriz.png" width="155px" alt="Endowl">
+				</a>
+				</div>
+				<button class="navbar-toggler" 
+						type="button" 
+						data-toggle="collapse" 
+						data-target="#navbarNav" 
+						aria-controls="navbarNav" 
+						aria-expanded="false" 
+						aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+					<ul class="navbar-nav menu-navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="https://endowl.com/">
+								<p class="nav-link-number">1</p>
+								<p class="nav-link-menu">Home</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://endowl.com/#inheritance">
+								<p class="nav-link-number">2</p>
+								<p class="nav-link-menu">About</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://endowl.com/#team">
+								<p class="nav-link-number">3</p>
+								<p class="nav-link-menu">Team</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://endowl.com/blog/">
+								<p class="nav-link-number">4</p>
+								<p class="nav-link-menu">Blog</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="top"></div>
+		<div class="wrapper">
+			<div class="header">
+				<div class="container header-container">
+					<h1 class="header-title">Introducing Endowl 🦉</h1>
+			</div>			
+				</div>
+			<div class="container header-container">
+				<p class="header-subtitle">A Virtual Caretaker For Your Digital Assets</p>	
+			</div>
+			<div class="container">
+					
+Most people have valuable digital assets, whether they realize it or not.
+
+<br><br>
+
+Whether we’re talking about the growing market for cryptocurrency or the files and accounts most people store and access through their computers, digital assets are a growing 
+part of people’s everyday lives.
+
+<br><br>
+
+Unfortunately, providing access to these assets once their owners can no longer be responsible for them often involves providing heirs with highly-specific instructions and in 
+some cases, requires them to jump through legal hurdles in order to access the assets.
+
+<br><br>
+
+<h2>Introducing Endowl 🦉</h2>
+
+Endowl 🦉 is creating the virtual caretaker for your digital assets. 
+
+<br><br>
+
+Ken Hodler, Morgan Sherwood, Seth Goldfarb, and Aaron Anderson came together as Team  Alfred for the ETHDenver 2020 hackathon to work on issues relating to security in the 
+Ethereum ecosystem.
+
+<br><br>
+
+<img src="EndowlTeam.jpg">
+
+<br><br>
+
+Discussion about what to build led to the problem of cryptocurrency inheritance. A quick search revealed several attempts at solutions but nothing addressed the technical and 
+legal issues involved in digital estate planning in way that satisfied the team.
+
+<br><br>
+
+The proof-of-concept won a bounty from Kyber Network and the encouragement Team Alfred received motivated them to continue exploring the market for digital inheritance.
+
+<br><br>
+
+<h2>What We’re Building</h2>
+				
+Our solution will help people and companies maintain legacy access to digital assets and documents after their death or incapacitation while maintaining privacy, accessibility, and flexibility.
+
+<br><br>
+
+The solutions we’re creating:
+
+<br><br>
+
+<li>Guide users through the estate planning process</li>
+<li>Provide methods for generating proof-of-death or incapacitation</li>
+<li>Automate the distribution of assets in accordance with the owner’s wishes</li>
+
+<br><br>
+
+Since ETHDenver, Endowl’s 🦉 journey has led: 
+
+<br><br>
+
+<li>To victory in MetaCartel’s Dragon Quest with 2nd place out of 70 entries and a bounty from Gnosis for building a recovery dApp using Gnosis’ contract proxy kit</li>
+
+<br><br>
+
+<li>To new insights on the issues surrounding digital inheritance through user testing advised by the Maker Foundation’s Jordan Jackson</li>
+
+<br><br>
+
+<li>To our current participation in Consensys’ Tachyon Accelerator Program</li>
+
+<br><br>
+
+In the coming weeks, we plan to start user testing our digital asset inheritance solution in anticipation of a beta release.
+
+<h2>Sign up for Updates</h2>
+
+We’re Endowl and our mission is to help people and organizations ensure digital assets can be properly managed when their owners can no longer be responsible for them.
+
+<br><br>
+
+Sign up for updates on the team’s progress and opportunities to participate in user testing and gain early access to our digital inheritance solutions. Thanks for reading!
+
+			</div>
+					<br>
+			<div class="content">
+				<div class="col-lg-4 offset-lg-2 header-title-section">
+					<p class="header-title-text">Sign up for updates</p>
+						<!-- Start hubspot form -->
+							<!--[if lte IE 8]>
+								<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+							<![endif]-->
+							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+							<script>
+							  hbspt.forms.create({
+								portalId: "8619597",
+								formId: "2a1ad938-4a8a-4b53-8dcf-a16c1eab4555"
+							});
+							</script>
+						<!-- End hubspot form -->
+				</div>
+				<div class="col-lg-4 offset-lg-2 header-title-section">
+						<a class="header-subtitle" href="/blog/_posts/2020-03-01-whats-jekyll.md">Blog1</p>
+							<a href="/blog/testblog.html" class="header-title-text">Lorem ipsum description</p>
+						<br><br>
+						<a class="header-subtitle" href="/blog/testblog.html">Longer Blog Title and The Title of All Blogs</p>
+							<a class="header-title-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a urna dictum, pellentesque 
+ligula sed, commodo leo. Pellentesque vitae tellus porta, rutrum ligula a, luctus est. Nam vestibulum arcu rhoncus.</p>
+				</div>
+			</div>
+
+	<!--See old posts -->
+			
+			<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+
+    {{ post.content }}
+  </article>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+			
+			<div class="footer-section">
+				<div class="footer-section-bg-graphics">
+					<img src="/assets/images/footer-section-bg.png">
+				</div>
+
+				<div class="container footer-container">
+					<div class="col-lg-3 col-md-6 footer-logo">
+<!--						<img src="assets/images/logo_footer.png">-->
+						<h3 class="footer-subsection-title">Endowl</h3>
+						<p class="footer-susection-text">Plan Your Legacy</p>
+					</div>
+					<div class="col-lg-3 col-md-6 footer-subsection">
+						<div class="footer-subsection-2-1">
+							<h3 class="footer-subsection-title">Links</h3>
+								<a href="https://endowl.com/">Home</a><br>
+								<a href="https://endowl.com/#inheritance">About</a><br>
+								<a href="https://endowl.com/blog/">Blog</a><br>
+								<a href="https://endowl.com/#team">Team</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 footer-subsection">
+						<h3 class="footer-subsection-title">Contact Us</h3>
+						<ul class="footer-subsection-list">
+<!--							<li>Address Line 1</li>-->
+<!--							<li>Address Line 2</li>-->
+<!--							<a href="mailto:contact@alfred.estate"><li>seth@alfred.estate</li></a>-->
+							<li><a href="#top">Sign up for updates</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 footer-subsection">
+						<div class="footer-subsection-2-2">
+							<h3 class="footer-subsection-title">Social</h3>
+							<div class="footer-social-media-icons-section">
+								<a href="https://twitter.com/Endowl_Inc" target="_blank" class="footer-social-media-icon"><i class="fa fa-twitter"></i></a>
+								<a href="https://www.facebook.com/EndowlInc/" target="_blank" class="footer-social-media-icon"><i class="fa fa-facebook"></i></a>						
+								<a href="https://www.linkedin.com/company/endowl" target="_blank" class="footer-social-media-icon"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container footer-credits">
+					<p>&copy; 2020 <a href="#top" title="Endowl, Inc">Endowl,&trade; Inc</a>. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER SCRIPTS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="/assets/js/owl/owl.carousel.js"></script>
+		<script src="/assets/js/accordian.js"></script>
+		<!-- Header scroll -->
+		<script type="text/javascript">
+				$(window).scroll(function() {
+				    if ($(this).scrollTop() > 20) {
+				      $('#navbar').addClass('header-scrolled');
+				    } else {
+				      $('#navbar').removeClass('header-scrolled');
+				    }
+				  });		
+		</script>
+		<script>
+			$(document).ready(function(){
+			  $(".owl-carousel").owlCarousel({
+			  	items:4,
+			  	loop:true,
+			  	nav:true,
+			  	autoplay:true,
+			    autoplayTimeout:2000,
+			    autoplayHoverPause:true,
+			    responsiveClass:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:3
+			        },
+			        1000:{
+			            items:4
+			        }
+			    }
+			  });
+			});
+	    </script>
+	<!-- Start of HubSpot Embed Code -->
+	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8619597.js"></script>
+	<!-- End of HubSpot Embed Code -->
+	</body>
+</html>
