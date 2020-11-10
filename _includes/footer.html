@@ -1,35 +1,90 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
+<div class="footer-section">
+  <div class="footer-section-bg-graphics">
+    <img src="{{ "/assets/images/footer-section-bg.png" | relative_url }}">
   </div>
 
-</footer>
+  <div class="container footer-container">
+    <div class="col-lg-3 col-md-6 footer-logo">
+      <!--						<img src="assets/images/logo_footer.png">-->
+      <h3 class="footer-subsection-title">Endowl</h3>
+      <p class="footer-susection-text">Plan Your Legacy</p>
+    </div>
+    <div class="col-lg-3 col-md-6 footer-subsection">
+      <div class="footer-subsection-2-1">
+        <h3 class="footer-subsection-title">Links</h3>
+        <a href="{{ "/#top" | relative_url }}">Home</a><br>
+        <a href="{{ "/#inheritance" | relative_url }}">About</a><br>
+        <a href="{{ "/blog/" | relative_url }}">Blog</a><br>
+        <a href="{{ "/#team" | relative_url }}">Team</a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 footer-subsection">
+      <h3 class="footer-subsection-title">Contact Us</h3>
+      <ul class="footer-subsection-list">
+        <!--							<li>Address Line 1</li>-->
+        <!--							<li>Address Line 2</li>-->
+        <!--							<a href="mailto:contact@alfred.estate"><li>seth@alfred.estate</li></a>-->
+        <li><a href="{{ "/#top" | relative_url }}">Sign up for updates</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 footer-subsection">
+      <div class="footer-subsection-2-2">
+        <h3 class="footer-subsection-title">Social</h3>
+        <div class="footer-social-media-icons-section">
+          <a href="https://twitter.com/Endowl_Inc" target="_blank" class="footer-social-media-icon"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/EndowlInc/" target="_blank" class="footer-social-media-icon"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/endowl" target="_blank" class="footer-social-media-icon"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-credits">
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <p>© 2020 <a href="{{ "/#top" | relative_url }}" title="Endowl, Inc">Endowl,™ Inc</a>. All Rights Reserved.</p>
+  </div>
+</div>
+
+<!-- FOOTER SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="{{ "/assets/js/owl/owl.carousel.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/accordian.js" | relative_url }}"></script>
+<!-- Header scroll -->
+<script type="text/javascript">
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 20) {
+      $('#navbar').addClass('header-scrolled');
+    } else {
+      $('#navbar').removeClass('header-scrolled');
+    }
+  });
+</script>
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items:4,
+      loop:true,
+      nav:true,
+      autoplay:true,
+      autoplayTimeout:2000,
+      autoplayHoverPause:true,
+      responsiveClass:true,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:4
+        }
+      }
+    });
+  });
+</script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8619597.js"></script>
+<!-- End of HubSpot Embed Code -->

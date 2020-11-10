@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/letter-to-heirs/static/css/main.e144cf91.chunk.css",
+    "main.js": "/letter-to-heirs/static/js/main.5bed0377.chunk.js",
+    "main.js.map": "/letter-to-heirs/static/js/main.5bed0377.chunk.js.map",
+    "runtime-main.js": "/letter-to-heirs/static/js/runtime-main.5064ef4a.js",
+    "runtime-main.js.map": "/letter-to-heirs/static/js/runtime-main.5064ef4a.js.map",
+    "static/js/2.7c89ead7.chunk.js": "/letter-to-heirs/static/js/2.7c89ead7.chunk.js",
+    "static/js/2.7c89ead7.chunk.js.map": "/letter-to-heirs/static/js/2.7c89ead7.chunk.js.map",
+    "static/css/3.2a86faee.chunk.css": "/letter-to-heirs/static/css/3.2a86faee.chunk.css",
+    "static/js/3.65cba93f.chunk.js": "/letter-to-heirs/static/js/3.65cba93f.chunk.js",
+    "static/js/3.65cba93f.chunk.js.map": "/letter-to-heirs/static/js/3.65cba93f.chunk.js.map",
+    "static/js/4.6ca0da23.chunk.js": "/letter-to-heirs/static/js/4.6ca0da23.chunk.js",
+    "static/js/4.6ca0da23.chunk.js.map": "/letter-to-heirs/static/js/4.6ca0da23.chunk.js.map",
+    "index.html": "/letter-to-heirs/index.html",
+    "precache-manifest.85712adcf422908a741b04f87afc3c38.js": "/letter-to-heirs/precache-manifest.85712adcf422908a741b04f87afc3c38.js",
+    "service-worker.js": "/letter-to-heirs/service-worker.js",
+    "static/css/3.2a86faee.chunk.css.map": "/letter-to-heirs/static/css/3.2a86faee.chunk.css.map",
+    "static/css/main.e144cf91.chunk.css.map": "/letter-to-heirs/static/css/main.e144cf91.chunk.css.map",
+    "static/js/2.7c89ead7.chunk.js.LICENSE.txt": "/letter-to-heirs/static/js/2.7c89ead7.chunk.js.LICENSE.txt",
+    "static/js/3.65cba93f.chunk.js.LICENSE.txt": "/letter-to-heirs/static/js/3.65cba93f.chunk.js.LICENSE.txt",
+    "static/js/4.6ca0da23.chunk.js.LICENSE.txt": "/letter-to-heirs/static/js/4.6ca0da23.chunk.js.LICENSE.txt",
+    "static/media/form-style.scss": "/letter-to-heirs/static/media/moroccan-flower.6183e7e4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5064ef4a.js",
+    "static/css/3.2a86faee.chunk.css",
+    "static/js/3.65cba93f.chunk.js",
+    "static/css/main.e144cf91.chunk.css",
+    "static/js/main.5bed0377.chunk.js"
+  ]
+}
