@@ -24,8 +24,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   Endowl helps you plan your legacy.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://endowl.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Endowl_Inc
-github_username:  endowl
+#twitter_username: Endowl_Inc
+#github_username:  endowl
+show_excerpts: true
+
+# Set google_analytics value to a tracking ID to enable:
+google_analytics: G-0R9WWXK5C2
+
+sass:
+  style: compressed
 
 # Build settings
 #theme: minima
@@ -42,17 +49,15 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - .idea/

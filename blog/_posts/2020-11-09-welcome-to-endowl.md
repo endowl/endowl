@@ -1,9 +1,15 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Endowl!"
+subtitle: "Nice to meet you"
+author: "The Team at Endowl"
 date:   2020-11-09 16:51:46 -0800
-categories: jekyll update
 ---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum tortor dui, ut placerat lectus tincidunt eget. Ut ultrices ligula sed viverra venenatis. Curabitur ullamcorper laoreet tempus. In pretium sollicitudin rutrum. Aenean vehicula tellus eget mi ornare tristique. Suspendisse at dictum est. Suspendisse leo quam, tempus gravida turpis et, viverra ultricies nisi. Aliquam consectetur, neque et malesuada viverra, ligula velit vehicula lorem, suscipit sodales sem nunc vulputate felis.
+
+#### Sub-Header
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:

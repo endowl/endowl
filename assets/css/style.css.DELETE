@@ -39,8 +39,18 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
+    margin: 0;
+    font-weight: 500;
+}
+
+nav h1,
+nav h2,
+nav h3,
+nav h4,
+nav h5,
+nav h6,
+nav p {
     margin: 0;
     font-size: 1em;
     font-weight: 500;
@@ -259,7 +269,6 @@ button:focus {
 .content {
     display: flex;
     width: 80%;
-    padding: 75px 0 25px 0;
     justify-content: center;
     align-items: center;
 }

@@ -12,10 +12,10 @@
     <div class="col-lg-3 col-md-6 footer-subsection">
       <div class="footer-subsection-2-1">
         <h3 class="footer-subsection-title">Links</h3>
-        <a href="{{ "/#top" | relative_url }}">Home</a><br>
-        <a href="{{ "/#inheritance" | relative_url }}">About</a><br>
-        <a href="{{ "/blog/" | relative_url }}">Blog</a><br>
-        <a href="{{ "/#team" | relative_url }}">Team</a>
+        <a href="{{ "/index.html#top" | relative_url }}">Home</a><br>
+        <a href="{{ "/index.html#inheritance" | relative_url }}">About</a><br>
+        <a href="{{ "/index.html#team" | relative_url }}">Team</a><br>
+        <a href="{{ "/blog/" | relative_url }}">Blog</a>
       </div>
     </div>
     <div class="col-lg-3 col-md-6 footer-subsection">
@@ -23,8 +23,8 @@
       <ul class="footer-subsection-list">
         <!--							<li>Address Line 1</li>-->
         <!--							<li>Address Line 2</li>-->
-        <!--							<a href="mailto:contact@alfred.estate"><li>seth@alfred.estate</li></a>-->
-        <li><a href="{{ "/#top" | relative_url }}">Sign up for updates</a></li>
+        <!--        <a href="mailto:info@endowl.com"><li>info@endowl.com</li></a>-->
+        <li><a href="{{ "/index.html#top" | relative_url }}">Sign up for updates</a></li>
       </ul>
     </div>
     <div class="col-lg-3 col-md-6 footer-subsection">
@@ -40,17 +40,17 @@
   </div>
 
   <div class="container footer-credits">
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-    <p>© 2020 <a href="{{ "/#top" | relative_url }}" title="Endowl, Inc">Endowl,™ Inc</a>. All Rights Reserved.</p>
+    <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p><br />
+    <p>© 2020 <a href="{{ "/index.html" | relative_url }}" title="Endowl, Inc">Endowl,™ Inc</a>. All Rights Reserved.</p>
   </div>
 </div>
 
 <!-- FOOTER SCRIPTS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="{{ "/assets/js/owl/owl.carousel.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/accordian.js" | relative_url }}"></script>
+<!--<script src="{{ "/assets/js/owl/owl.carousel.js" | relative_url }}"></script>-->
+<!--<script src="{{ "/assets/js/accordian.js" | relative_url }}"></script>-->
 <!-- Header scroll -->
 <script type="text/javascript">
   $(window).scroll(function() {
@@ -59,30 +59,6 @@
     } else {
       $('#navbar').removeClass('header-scrolled');
     }
-  });
-</script>
-<script>
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      items:4,
-      loop:true,
-      nav:true,
-      autoplay:true,
-      autoplayTimeout:2000,
-      autoplayHoverPause:true,
-      responsiveClass:true,
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items:3
-        },
-        1000:{
-          items:4
-        }
-      }
-    });
   });
 </script>
 <!-- Start of HubSpot Embed Code -->
