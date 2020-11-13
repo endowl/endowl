@@ -49,6 +49,11 @@
 
 <!-- Header scroll -->
 <script type="text/javascript">
+  $().ready(function() {
+    if ($(this).scrollTop() > 20) {
+      $('#navbar').addClass('header-scrolled');
+    }
+  })
   $(window).scroll(function() {
     if ($(this).scrollTop() > 20) {
       $('#navbar').addClass('header-scrolled');

@@ -19,7 +19,7 @@ permalink: /blog/
         </a>
       </h3>
       {%- if site.show_excerpts -%}
-        {{ post.excerpt }}<br>
+        <div>{{ post.excerpt }}</div>
         <a href="{{ post.url | relative_url }}">continue reading...</a>
       {%- endif -%}
     </li>

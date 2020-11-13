@@ -28,8 +28,11 @@ url: "http://endowl.com" # the base hostname & protocol for your site, e.g. http
 #github_username:  endowl
 show_excerpts: true
 
-# Set google_analytics value to a tracking ID to enable:
+# Google Analytics tracking ID to enable
 google_analytics: G-0R9WWXK5C2
+
+# Hubspot Tracking ID
+hubspot_tracking: 8619597
 
 sass:
   style: compressed
