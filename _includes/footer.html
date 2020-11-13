@@ -1,3 +1,4 @@
+
 <div class="footer-section">
   <div class="footer-section-bg-graphics">
     <img src="{{ "/assets/images/footer-section-bg.png" | relative_url }}">
@@ -45,9 +46,7 @@
 <!-- FOOTER SCRIPTS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>-->
-<!--<script src="{{ "/assets/js/owl/owl.carousel.js" | relative_url }}"></script>-->
-<!--<script src="{{ "/assets/js/accordian.js" | relative_url }}"></script>-->
+
 <!-- Header scroll -->
 <script type="text/javascript">
   $(window).scroll(function() {
@@ -58,6 +57,5 @@
     }
   });
 </script>
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8619597.js"></script>
-<!-- End of HubSpot Embed Code -->
+
+{%- include hubspot-tracking.html -%}
