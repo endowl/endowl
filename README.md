@@ -34,15 +34,15 @@ Learn about Endowl and sign-up for project updates at [endowl.com](https://endow
 
 #### Local development server:
 
-- Start local Jekyll development server (from the project directory):
+- Start local Jekyll development server from the project directory:
 
         bundle exec jekyll serve
 
 - Stop a running Jekyll development server:
 
-        ^c
+        [ctrl]-c
 
-- Start Jekyll with drafts visible locally:
+- Start Jekyll with drafts of blog posts visible locally:
 
         bundle exec jekyll serve --drafts
 
@@ -54,8 +54,9 @@ Learn about Endowl and sign-up for project updates at [endowl.com](https://endow
 
     	blog/_posts/
 
-Name blog post files in this format: `YEAR-MONTH-DAY-title.EXTENSION`
-For example:
+- Name blog post files in this format: `YEAR-MONTH-DAY-title.EXTENSION`
+
+    For example:
 
         blog/_posts/2020-11-13-this-day-in-history.html
 
@@ -71,13 +72,13 @@ For example:
 
 - Store anywhere except special folders that start with an underscore.
 
-- Eg, do NOT store in the subdirectories:
+    Eg. do NOT store in the subdirectories:
 
         blog/_posts/ , _posts/ , _site/ , _layouts/ ...
 
 - Okay to store in project root directory and subdirectories
 
-- Eg, okay to store directly in:
+    Eg. okay to store directly in:
  
         ./ , blog/ , assets/images/ , ...
 
