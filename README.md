@@ -17,7 +17,7 @@ Learn about Endowl and sign-up for project updates at [endowl.com](https://endow
 - In a new Command Prompt, install Jekyll and the Ruby package manager by running:
 
         gem install jekyll bundler
-
+        
 #### LINUX & MAC OS: Install Jekyll on local development machine:
 
 - See: https://jekyllrb.com/docs/installation/
@@ -30,21 +30,23 @@ Learn about Endowl and sign-up for project updates at [endowl.com](https://endow
 
         clone https://github.com/endowl/endowl.git
 
+- Install dependencies
+
+        cd endowl
+        bundler install
+
+
 ### USAGE:
 
 #### Local development server:
 
-- Start local Jekyll development server from the project directory:
+- Start local Jekyll development server from the project directory, with post drafts visible:
 
-        bundle exec jekyll serve
+        bundle exec jekyll serve --drafts
 
 - Stop a running Jekyll development server:
 
         [ctrl]-c
-
-- Start Jekyll with drafts of blog posts visible locally:
-
-        bundle exec jekyll serve --drafts
 
 - Access development server at http://127.0.0.1:4000/
 
@@ -156,9 +158,10 @@ Learn about Endowl and sign-up for project updates at [endowl.com](https://endow
 
 #### Reference:
 
-Jekyll documentation:
-- https://jekyllrb.com/docs/pages/
-- https://jekyllrb.com/docs/posts/
+[Jekyll pages documentation](https://jekyllrb.com/docs/pages/)
 
-“How to Create a Blog Using Jekyll and GitHub Pages on Windows”:
-- https://www.kiltandcode.com/2020/04/30/how-to-create-a-blog-using-jekyll-and-github-pages-on-windows/
+[Jekyll posts documentation](https://jekyllrb.com/docs/posts/)
+
+[How to Create a Blog Using Jekyll and GitHub Pages on Windows](https://www.kiltandcode.com/2020/04/30/how-to-create-a-blog-using-jekyll-and-github-pages-on-windows/)
+
+[Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
