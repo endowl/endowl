@@ -135,3 +135,5 @@ The person or organization responsible for managing a trust.
 ## Will
 A legal document describing how a person wants their assets to be distributed after death.
 
+- [ ] Checkbox test
+
