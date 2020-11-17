@@ -18,61 +18,57 @@ Creating an estate plan is about more than just writing a will; it’s about mak
 
 ### 1. Document Your Assets
 
-<br>
+- [ ] Create an inventory of your: 
 
-[] Create an inventory of your: 
+- [ ] Cash and Financial Accounts
 
-[] Cash and Financial Accounts
+- [ ] Investments
 
-[] Investments
+- [ ] Insurance Policies
 
-[] Insurance Policies
+- [ ] Memberships (AARP, Professional Associations, etc.)
 
-[] Memberships (AARP, Professional Associations, etc.)
+- [ ] Valuable Assets
 
-[] Valuable Assets
-
-[] Sentimental Assets
+- [ ] Sentimental Assets
 
 Be sure to include details like account numbers, how to access each item, and what person or company might need to be contacted.
 
 Sign and date the lists when you’re finished with them and make copies to store in a safety deposit box and share with the person you want to administer your estate.
 
-<h3>2. Plan Your Estate</h3>
+### 2. Plan Your Estate
 
-<br>
+- [ ] Select an executor, also referred to as an estate administrator
 
-[] Select an executor, also referred to as an estate administrator
+- [ ] Write a letter to your heirs explaining:
 
-[] Write a letter to your heirs explaining:
+  - [ ] How to access your will, passwords, and financial accounts
 
-  [] How to access your will, passwords, and financial accounts
+  - [ ] What to do with your things
 
-  [] What to do with your things
-
-  [] Who can help access anything important
+  - [ ] Who can help access anything important
 
 Store the letter in a safe location such as a safety deposit box and be sure to give a copy to your estate administrator.
 
-[] Consider creating these documents to legally protect your wishes:
+- [ ] Consider creating these documents to legally protect your wishes:
 
-  [] Simple Will
+  - [ ] Simple Will
 
-    [] Designate the beneficiaries of your estate
+    - [ ] Designate the beneficiaries of your estate
 
-    [] Designate guardianship for children, pets, or others in your care
+    - [ ] Designate guardianship for children, pets, or others in your care
 
-    [] Select an estate administrator    
+    - [ ] Select an estate administrator    
 
-  [] Living Trust
+  - [ ] Living Trust
 
-  [] Financial Power of Attorney
+  - [ ] Financial Power of Attorney
 
-  [] Medical Power of Attorney
+  - [ ] Medical Power of Attorney
 
-  [] Medical Directive
+  - [ ] Medical Directive
 
-  [] Living Will
+  - [ ] Living Will
 
 A Simple Will, Power of Attorney, Medical Power of Attorney, and Living Will are the most important documents to consider.
 
@@ -87,13 +83,13 @@ What you need to do to legally protect your wishes can depend on a number of fac
 * The size and complexity of your estate
 * How many beneficiaries you want to leave items to
 
-[] Designate beneficiaries for your financial accounts
+- [ ] Designate beneficiaries for your financial accounts
 
-[] Set up transfer on death (TOD) designation
+- [ ] Set up transfer on death (TOD) designation
 
-[] Life Insurance
+- [ ] Life Insurance
 
-[] Retirement Accounts
+- [ ] Retirement Accounts
 
 Most financial institutions enable account holders to designate beneficiaries for their accounts. 
 
@@ -105,7 +101,7 @@ Designating a beneficiary for your accounts and insurance policies will allow th
 
 Major changes in your life like marriage, having kids, or buying a house are all points at which you will want to review your estate plan.
 
-[] 
+- [ ] 
 
 The more you communicate with those responsible for carrying out your wishes, the easier it will be for them to handle the responsibility when the time comes.
 
@@ -113,7 +109,7 @@ Talking about your final wishes is never easy but
 
 Probate?
 
-<h2>Start Planning Now</h2>>
+<h2>Start Planning Now</h2>
 
 Sign up to 
 
