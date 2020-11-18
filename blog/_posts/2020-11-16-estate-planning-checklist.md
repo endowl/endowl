@@ -10,7 +10,11 @@ Whether or not you’re wealthy enough to own an estate, it’s important to hav
 
 Creating an estate plan is about more than just writing a will; it’s about making sure your loved ones aren’t faced with more difficulty than they need to when handling your estate.
 
-[/blog/2020/11/16/estate-planning-checklist#1. Document Your Assets](Document Your Assets)<br>
+[1. Document Your Assets](/blog/2020/11/16/estate-planning-checklist#1-document-your-assets)<br>
+[2. Plan Your Estate](/blog/2020/11/16/estate-planning-checklist#2-plan-your-estate)
+<br>
+[3. Review and Communicate Your Plan](/blog/2020/11/16/estate-planning-checklist#3-review-and-communicate-your-plan)
+<br>
 
 ## The Estate Planning Checklist 
 
@@ -18,7 +22,9 @@ Creating an estate plan is about more than just writing a will; it’s about mak
 
 ### 1. Document Your Assets
 
-- [ ] Create an inventory of your: 
+<br>
+
+Create an inventory of your: 
 
 - [ ] Cash and Financial Accounts
 
@@ -37,6 +43,8 @@ Be sure to include details like account numbers, how to access each item, and wh
 Sign and date the lists when you’re finished with them and make copies to store in a safety deposit box and share with the person you want to administer your estate.
 
 ### 2. Plan Your Estate
+
+<br>
 
 - [ ] Select an executor, also referred to as an estate administrator
 
@@ -85,11 +93,11 @@ What you need to do to legally protect your wishes can depend on a number of fac
 
 - [ ] Designate beneficiaries for your financial accounts
 
-- [ ] Set up transfer on death (TOD) designation
+  - [ ] Set up transfer on death (TOD) designation
 
-- [ ] Life Insurance
+  - [ ] Life Insurance
 
-- [ ] Retirement Accounts
+  - [ ] Retirement Accounts
 
 Most financial institutions enable account holders to designate beneficiaries for their accounts. 
 
@@ -101,18 +109,16 @@ Designating a beneficiary for your accounts and insurance policies will allow th
 
 Major changes in your life like marriage, having kids, or buying a house are all points at which you will want to review your estate plan.
 
-- [ ] 
+- [ ] Communicate your wishes to the individual or individuals tasked with representing your legal and medical wishes and executing your estate plan
 
-The more you communicate with those responsible for carrying out your wishes, the easier it will be for them to handle the responsibility when the time comes.
+- [ ] Review the plan every 3 years or when major changes occur in your life
 
-Talking about your final wishes is never easy but
-
-Probate?
+Talking about your final wishes is never easy but the more you communicate with those responsible for carrying out your wishes, the easier it will be for them to handle the responsibility when the time comes.
 
 <h2>Start Planning Now</h2>
 
-Sign up to 
+<br>
 
 If you’re an adult with loved ones and possessions you care about, you need an estate plan to make sure the fruits of your labor continue to benefit your loved ones if and when you’re not around anymore.
 
-
+Sign up to be among the first to try Endowl's AI-powered onboarding solution at [www.endowl.com](www.endowl.com). Take photos or video to create an inventory of your assets and communicate your wishes with the help of our virtual estate planner.
