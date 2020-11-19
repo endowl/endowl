@@ -46,7 +46,7 @@ Sign and date the lists when you’re finished with them and make copies to stor
 
 <br>
 
-- [ ] Select an executor, also referred to as an estate administrator
+- [ ] Select an [executor](https://endowl.com/estate-planning-glossary#executor), also referred to as an estate administrator
 
 - [ ] Write a letter to your heirs explaining:
 
@@ -62,21 +62,21 @@ Store the letter in a safe location such as a safety deposit box and be sure to 
 
   - [ ] Simple Will
 
-    - [ ] Designate the beneficiaries of your estate
+    - [ ] Designate the [beneficiaries](https://endowl.com/estate-planning-glossary#beneficiary) of your estate
 
     - [ ] Designate guardianship for children, pets, or others in your care
 
     - [ ] Select an estate administrator    
 
-  - [ ] Living Trust
+  - [ ] [Living Will]((https://endowl.com/estate-planning-glossary#living-will)
 
   - [ ] Financial Power of Attorney
 
   - [ ] Medical Power of Attorney
 
-  - [ ] Medical Directive
+  - [ ] [Medical Directive](https://endowl.com/estate-planning-glossary#medical-directive)
 
-  - [ ] Living Will
+  - [ ] Living Trust
 
 A Simple Will, Power of Attorney, Medical Power of Attorney, and Living Will are the most important documents to consider.
 
@@ -121,4 +121,4 @@ Talking about your final wishes is never easy but the more you communicate with 
 
 If you’re an adult with loved ones and possessions you care about, you need an estate plan to make sure the fruits of your labor continue to benefit your loved ones if and when you’re not around anymore.
 
-Sign up to be among the first to try Endowl's AI-powered onboarding solution at [www.endowl.com](www.endowl.com). Take photos or video to create an inventory of your assets and communicate your wishes with the help of our virtual estate planner.
+Sign up to be among the first to try Endowl's virtual estate planner and learn everything you need to plan your estate.
