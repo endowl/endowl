@@ -4,11 +4,11 @@ title: The Probate Checklist
 subtitle: The steps you need to complete your estate plan
 ---
 
-Assess The Situation
-File The Will
-Handle Administrative Affairs
-Handle The Money
-Close The Estate
+[1.Assess The Situation](/blog/2020-11-23-probate-checklist#1-assess-the-situation)
+[2. File The Will](/blog/2020-11-23-probate-checklist#2-file-the-will)
+[3. Handle Administrative Affairs]()/blog/2020-11-23-probate-checklist#3-handle-administrative-affairs)
+[4. Handle The Money](/blog/2020-11-23-probate-checklist#4-handle-the-money)
+[5. Close The Estate](/blog/2020-11-23-probate-checklist#5-close-the-estate)
 
 ## The Executor Checklist
 
@@ -22,7 +22,7 @@ Close The Estate
 
   [] Books on the estate planning process written for non-lawyers can be helpful
 
-  [] Probate court clerks can answer questions about probate court procedures
+  [] [Probate](https://endowl.com/estate-planning-glossary#probate) court clerks can answer questions about probate court procedures
 
   [] Some courts have staff lawyers who will review probate documents for you
 
@@ -64,6 +64,6 @@ Close The Estate
 
 ## Start Planning Now
 
-Sign up to 
-
 If you’re an adult with loved ones and possessions you care about, you need an estate plan to make sure the fruits of your labor continue to benefit your loved ones if and when you’re not around anymore.
+
+Sign up to be among the first to try Endowl's virtual estate planner and learn everything you need to plan your estate.
