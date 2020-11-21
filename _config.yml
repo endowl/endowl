@@ -20,10 +20,19 @@
 
 title: Endowl
 email: info@endowl.com
+tagline: Plan Your Legacy
 description: >- # this means to ignore newlines until "baseurl:"
-  Endowl helps you plan your legacy.
+  Endowl helps you plan your legacy. You don't have to be wealthy to leave your loved ones a fortune.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://endowl.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter:
+  username: Endowl_Inc
+social:
+  links:
+    - https://twitter.com/Endowl_Inc
+    - https://www.facebook.com/EndowlInc/
+    - https://www.linkedin.com/company/endowl
+
 #twitter_username: Endowl_Inc
 #github_username:  endowl
 show_excerpts: true
