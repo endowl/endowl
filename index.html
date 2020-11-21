@@ -1,281 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-    <!-- META DATA -->
-	<title>Endowl - Plan Your Legacy</title>
-    <meta name="description" content="Endowl is a virtual estate planner">
-	<meta name="keywords" content="Endowl,Crypto,Ethereum,dApp,inheritance,oracle,estateplanning,death,incapacitation">
-	<meta name="author" content="Endowl_Inc">
-	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-	<!-- FAVICON -->
-	<link rel="icon" type="image/png" href="assets/images/bowtie-white-bg.png">
-    <!-- STYLESHEETS -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/accordian.css" />
-	<link rel="stylesheet" href="assets/css/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
-	<!-- MailChimp -->
-	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-	<style type="text/css">
-		#mc_embed_signup{
-			/* background:#fff; */
-			/*font:14px Helvetica,Arial,sans-serif; width:100%;*/
-			clear:left;
-		}
-	</style>
-	<!-- SCRIPTS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="assets/js/smoothscroll.js"></script>
-</head>
-	<body>
-	<!-- NAVBAR -->
-		<nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-header navbar-mobile">
-			<div class="navbar-container container">
-				<!-- LOGO -->
-				<div class="navbar-brand">
-				<a class="navbar-brand-logo" href="#">
-					<img src="assets/images/Endowlhoriz.png" width="155px" alt="Endowl">
-				</a>
-				</div>
-				<button class="navbar-toggler" 
-						type="button" 
-						data-toggle="collapse" 
-						data-target="#navbarNav" 
-						aria-controls="navbarNav" 
-						aria-expanded="false" 
-						aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-around" id="navbarNav">
-					<ul class="navbar-nav menu-navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="#top">
-								<p class="nav-link-number">1</p>
-								<p class="nav-link-menu">Home</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#inheritance">
-								<p class="nav-link-number">2</p>
-								<p class="nav-link-menu">About</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#team">
-								<p class="nav-link-number">3</p>
-								<p class="nav-link-menu">Team</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://endowl.com/blog/">
-								<p class="nav-link-number">4</p>
-								<p class="nav-link-menu">Blog</p>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+---
+layout: default
+---
 
-		<div id="top"></div>
-		<div class="wrapper">
-			<div class="header">
-				<div class="container header-container">
-					<div class="col-lg-6 header-img-section">
-						<img src="assets/images/Owlfred.svg">
-					</div>
-					<div class="col-lg-5 offset-lg-1 header-title-section">
-						<h1 class="header-title">Hi, I'm Owlfred</h1>
-						<p class="header-subtitle">Let's plan your legacy</p>
-						<p class="header-title-text">COMING SOON</p>
-						<br><br>
-						<p class="header-title-text">Sign up for updates</p>
-						<!-- Start hubspot form -->
-							<!--[if lte IE 8]>
-								<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-							<![endif]-->
-							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-							<script>
-							  hbspt.forms.create({
-								portalId: "8619597",
-								formId: "2a1ad938-4a8a-4b53-8dcf-a16c1eab4555"
-							});
-							</script>
-						<!-- End hubspot form -->
-					</div>
-				</div>
-			</div>
+<div class="header">
+    <div class="container header-container">
+        <div class="col-lg-6 header-img-section">
+            <img src="{{ "/assets/images/Owlfred.svg" | relative_url }}">
+        </div>
+        <div class="col-lg-5 offset-lg-1 header-title-section">
+            <h1 class="header-title">Hi, I'm Owlfred</h1>
+            <p class="header-subtitle">Let's plan your legacy</p>
+            <p class="header-title-text">COMING SOON</p>
+            <br>
 
-			<div id="inheritance"></div>
-			<div class="services-sales-section">
-				<div class="container services-container">
-					<div class="col-lg-5 services-title-section">
-						<p class="services-subtitle">Virtual Endowlment</p>
-						<h2 class="services-title">Legacy Planning</h2>
-						<p class="services-text">You don’t have to be wealthy to leave your loved ones a fortune<br><br>Endowl helps you:<br>
-							<li>Understand and navigate the process at your own pace</li>
-							<li>Quickly identify assets using our AI-powered mobile app</li>
-							<li>Plan and communicate your wishes with your loved ones</li>
-							</p>
-					</div>
-					<div class="col-lg-6 offset-lg-1 services-header-img-section padding-0">
-						<img src="assets/images/services-header.png">
-					</div>
-				</div>
-			</div>
+                {%- include hubspot-form.html -%}
+<!--            <p class="header-title-text">Sign up for updates</p>-->
+<!--            &lt;!&ndash; Start hubspot form &ndash;&gt;-->
+<!--            &lt;!&ndash;[if lte IE 8]>-->
+<!--            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>-->
+<!--            <![endif]&ndash;&gt;-->
+<!--            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>-->
+<!--            <script>-->
+<!--                hbspt.forms.create({-->
+<!--                    portalId: "8619597",-->
+<!--                    formId: "2a1ad938-4a8a-4b53-8dcf-a16c1eab4555"-->
+<!--                });-->
+<!--            </script>-->
+<!--            &lt;!&ndash; End hubspot form &ndash;&gt;-->
+        </div>
+    </div>
+</div>
 
-			<div id="team"></div>
-			<div class="blog-section">
-				<div class="blog-section-right-bg">
-					<img src="assets/images/blog-section-right-bg.png">
-				</div>
-				<div class="blog-section-left-bg">
-					<img src="assets/images/blog-section-left-bg.png">
-				</div>
-				<div class="container blog-container">
-					<div class="blog-title-section">
-<!--						<p class="blog-subtitle">Recent updates</p>-->
-						<h2 class="blog-title">Our Team</h2>
-					</div>
-					<div class="blog-posts-section row align-items-start">
-						<div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
-							<div class="blog-post-card">
-								<div class="blog-post-icon">
-									<img src="assets/images/headshotKen.jpg" style="height: 200px;width: 200px;">
-								</div>
-								<h3 class="blog-post-title">Ken Hodler</h3>
-								<p class="blog-post-text">Formally CTO and early contributer at KeepKey. Deeply interested in economics and decentralized technology systems.</p>
-<!--								<a  class="blog-post-link" href="#news">Read More</a>-->
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
-							<div class="blog-post-card">
-								<div class="blog-post-icon mb-4">
-									<img src="assets/images/headshotAaron.jpg" style="height: 200px;width: 200px;">
-								</div>
-								<h3 class="blog-post-title">Aaron Anderson</h3>
-<!--                                <h4 class="blog-post-subtitle">Keywords</h4>-->
-								<p class="blog-post-text mb-4">A dApp engineer, equity partner at BlocX, and cofounder of Web3Devs experienced in bringing dApps to market.</p>
-<!--								<a class="nav-link learn-more-btn" href="#news">Read More</a>-->
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
-							<div class="blog-post-card">
-								<div class="blog-post-icon">
-									<img src="assets/images/headshotMorgan.jpg" style="height: 200px;width: 200px;">
-								</div>
-								<h3 class="blog-post-title">Morgan Sherwood</h3>
-								<p class="blog-post-text">A dApp engineer, algorithmic trader, and lifelong developer skilled in Python and smart contract security analysis.</p>
-<!--								<a class="blog-post-link" href="#news">Read More</a>-->
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
-							<div class="blog-post-card">
-								<div class="blog-post-icon">
-									<img src="assets/images/headshotseth.jpg" style="height: 200px;width: 200px;">
-								</div>
-								<h3 class="blog-post-title">Seth Goldfarb</h3>
-								<p class="blog-post-text">Seth helps companies tell the stories of their successs.</p>
-<!--								<a class="blog-post-link" href="#news">Read More</a>-->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-section">
-				<div class="footer-section-bg-graphics">
-					<img src="assets/images/footer-section-bg.png">
-				</div>
+<div id="inheritance"></div>
+<div class="services-sales-section">
+    <div class="container services-container">
+        <div class="col-lg-5 services-title-section">
+            <p class="services-subtitle">Virtual Endowlment</p>
+            <h2 class="services-title">Legacy Planning</h2>
+            <p class="services-text">You don’t have to be wealthy to leave your loved ones a fortune<br><br>Endowl helps you:<br>
+            <li>Navigate the process at your own pace</li>
+            <li>Quickly inventory assets using our AI-powered mobile app</li>
+            <li>Plan and communicate your wishes with your loved ones</li>
+            </p>
+        </div>
+        <div class="col-lg-6 offset-lg-1 services-header-img-section padding-0">
+            <img src="{{ "/assets/images/services-header.png" | relative_url }}">
+        </div>
+    </div>
+</div>
 
-				<div class="container footer-container">
-					<div class="col-lg-3 col-md-6 footer-logo">
-<!--						<img src="assets/images/logo_footer.png">-->
-						<h3 class="footer-subsection-title">Endowl</h3>
-						<p class="footer-susection-text">Plan Your Legacy</p>
-					</div>
-					<div class="col-lg-3 col-md-6 footer-subsection">
-						<div class="footer-subsection-2-1">
-							<h3 class="footer-subsection-title">Links</h3>
-								<a href="#top">Home</a><br>
-								<a href="#inheritance">About</a><br>
-								<a href="https://endowl.com/blog/#">Blog</a><br>
-								<a href="#team">Team</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 footer-subsection">
-						<h3 class="footer-subsection-title">Contact Us</h3>
-						<ul class="footer-subsection-list">
-<!--							<li>Address Line 1</li>-->
-<!--							<li>Address Line 2</li>-->
-<!--							<a href="mailto:contact@alfred.estate"><li>seth@alfred.estate</li></a>-->
-							<li><a href="#top">Sign up for updates</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-6 footer-subsection">
-						<div class="footer-subsection-2-2">
-							<h3 class="footer-subsection-title">Social</h3>
-							<div class="footer-social-media-icons-section">
-								<a href="https://twitter.com/Endowl_Inc" target="_blank" class="footer-social-media-icon"><i class="fa fa-twitter"></i></a>
-								<a href="https://www.facebook.com/EndowlInc/" target="_blank" class="footer-social-media-icon"><i class="fa fa-facebook"></i></a>						
-								<a href="https://www.linkedin.com/company/endowl" target="_blank" class="footer-social-media-icon"><i class="fa fa-linkedin"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="container footer-credits">
-					<p>&copy; 2020 <a href="#top" title="Endowl, Inc">Endowl,&trade; Inc</a>. All Rights Reserved.</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- FOOTER SCRIPTS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<script src="assets/js/owl/owl.carousel.js"></script>
-		<script src="assets/js/accordian.js"></script>
-		<!-- Header scroll -->
-		<script type="text/javascript">
-				$(window).scroll(function() {
-				    if ($(this).scrollTop() > 20) {
-				      $('#navbar').addClass('header-scrolled');
-				    } else {
-				      $('#navbar').removeClass('header-scrolled');
-				    }
-				  });		
-		</script>
-		<script>
-			$(document).ready(function(){
-			  $(".owl-carousel").owlCarousel({
-			  	items:4,
-			  	loop:true,
-			  	nav:true,
-			  	autoplay:true,
-			    autoplayTimeout:2000,
-			    autoplayHoverPause:true,
-			    responsiveClass:true,
-			    responsive:{
-			        0:{
-			            items:1
-			        },
-			        600:{
-			            items:3
-			        },
-			        1000:{
-			            items:4
-			        }
-			    }
-			  });
-			});
-	    </script>
-	<!-- Start of HubSpot Embed Code -->
-	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8619597.js"></script>
-	<!-- End of HubSpot Embed Code -->
-	</body>
-</html>
+<div id="team"></div>
+<div class="blog-section">
+    <div class="blog-section-right-bg">
+        <img src="{{ "/assets/images/blog-section-right-bg.png" | relative_url }}">
+    </div>
+    <div class="blog-section-left-bg">
+        <img src="{{ "/assets/images/blog-section-left-bg.png" | relative_url }}">
+    </div>
+    <div class="container blog-container">
+        <div class="blog-title-section">
+            <!--						<p class="blog-subtitle">Recent updates</p>-->
+            <h2 class="blog-title">Our Team</h2>
+        </div>
+        <div class="blog-posts-section row align-items-start">
+            <div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
+                <div class="blog-post-card">
+                    <div class="blog-post-icon">
+                        <img src="{{ "/assets/images/headshotKen.jpg" | relative_url }}" style="height: 200px;width: 200px;">
+                    </div>
+                    <h3 class="blog-post-title">Ken Hodler</h3>
+                    <p class="blog-post-text">Formally CTO and early contributer at KeepKey, Ken is deeply interested in economics and decentralized technology systems.</p>
+                    <!--								<a  class="blog-post-link" href="#news">Read More</a>-->
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
+                <div class="blog-post-card">
+                    <div class="blog-post-icon mb-4">
+                        <img src="{{ "/assets/images/headshotAaron.jpg" | relative_url }}" style="height: 200px;width: 200px;">
+                    </div>
+                    <h3 class="blog-post-title">Aaron Anderson</h3>
+                    <!--                                <h4 class="blog-post-subtitle">Keywords</h4>-->
+                    <p class="blog-post-text mb-4">Aaron brings dApps to market as a dApp engineer, equity partner at BlocX, and cofounder of Web3Devs.</p>
+                    <!--								<a class="nav-link learn-more-btn" href="#news">Read More</a>-->
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
+                <div class="blog-post-card">
+                    <div class="blog-post-icon">
+                        <img src="{{ "/assets/images/headshotMorgan.jpg" | relative_url }}" style="height: 200px;width: 200px;">
+                    </div>
+                    <h3 class="blog-post-title">Morgan Sherwood</h3>
+                    <p class="blog-post-text">Morgan is a dApp engineer, algorithmic trader, and lifelong developer skilled in Python and smart contract security analysis.</p>
+                    <!--								<a class="blog-post-link" href="#news">Read More</a>-->
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
+                <div class="blog-post-card">
+                    <div class="blog-post-icon">
+                        <img src="{{ "/assets/images/headshotseth.jpg" | relative_url }}" style="height: 200px;width: 200px;">
+                    </div>
+                    <h3 class="blog-post-title">Seth Goldfarb</h3>
+                    <p class="blog-post-text">Seth is a marketing and business development professional experienced in helping companies tell the stories of their successs.</p>
+                    <!--								<a class="blog-post-link" href="#news">Read More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
