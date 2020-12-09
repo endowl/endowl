@@ -5,7 +5,7 @@ $base-shade-dark: #313665;
 $base-shade-bold: #342177;
 $base-shade-bright: #6E28D0;
 $base-shade-medium: #6440E6;
-$base-shaed-muted: #646ECC;
+$base-shade-muted: #646ECC;
 $base-shade-light: #7783F2;
 
 $complimentary-shade-bold: #FFC030;
@@ -47,7 +47,7 @@ body {
   color: $contrast-shade;
   padding: 0;
   margin: 0;
-  background-color: $base-shade-medium;
+  background-color: $base-shade-muted;
   letter-spacing: .025ch;
 }
 
@@ -95,19 +95,9 @@ button:focus {
   top: 0;
   left: 0;
   width: 100%;
-  height: 75px;
-  background-color: #fff !important;
+  background-color: $base-shade-bold !important;
   -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
   box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
-}
-
-.header-scrolled .navbar-brand img {
-  width: 125px;
-  height: auto;
-}
-
-.header-scrolled .nav-link-number {
-  display: none;
 }
 
 .navbar {
