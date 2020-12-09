@@ -1,21 +1,17 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+$base-shade-dark: #313665;
+$base-shade-bold: #342177;
+$base-shade-bright: #6E28D0;
+$base-shade-medium: #6440E6;
+$base-shaed-muted: #646ECC;
+$base-shade-light: #7783F2;
 
-  /* Based on Codelander v1.0 by Codefest */
-  /* TABLE OF CONTENTS */
-  /* ------------------
-  1. General
-  2. Navbar
-  3. Header
-  4. Strategy Section
-  5. Services Section
-  6. Pricing Section
-  7. Clients Section
-  8. News Section
-  9. Contact Section
-  10. Footer
-  -------------------- */
+$complimentary-shade-bold: #FFC030;
+$complimentary-shade-medium: #FFE171;
+
+$contrast-shade: #FFFFFF;
 
 /* Checkboxes created from markdown processed by Jekyll and Github Pages */
 .task-list-item {
@@ -33,7 +29,7 @@
 
   /* 1. GENERAL */
 * {
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
   -moz-os-font-smoothing: grayscale;
   box-sizing: border-box;
 }
@@ -47,11 +43,12 @@ html {
 }
 
 body {
-  font-family: Poppins;
+  font-family: "Lota Grotesque";
+  color: $contrast-shade;
   padding: 0;
   margin: 0;
-  background-color: #FBFBFB;
-  background-image: linear-gradient(#FCFCFC, #FBFBFB, #F5F5F5, #F0F0F0);
+  background-color: $base-shade-medium;
+  letter-spacing: .025ch;
 }
 
 h1,
@@ -129,12 +126,18 @@ button:focus {
 .navbar-brand {
   display: flex;
   align-items: center;
-}
-
-.navbar-brand img {
-  margin-left: 15px;
-  width: 155px;
-  height: auto;
+  svg {
+    margin-top: 16px;
+    margin-left: 15px;
+    width: 155px;
+    height: auto;
+  }
+  .tagline {
+    font-size: 1.25rem;
+    color: $contrast-shade;
+    line-height: 1.35rem;
+    margin-left: 30px;
+  }
 }
 
 .navbar-brand-menu {
@@ -161,35 +164,21 @@ button:focus {
   text-align: right;
 }
 
-.nav-item .nav-link:hover .nav-link-number {
-  color: #FF3E81 !important;
-}
-
 .nav-item .nav-link:hover .nav-link-menu {
-  color: #FF3E81 !important;
-}
-
-.nav-link-number {
-  font-family: Poppins;
-  font-weight: 200 !important;
-  font-size: 12px;
-  color: #CCCCCC;
-  letter-spacing: 1.5px;
-  line-height: 1;
+  color: $complimentary-shade-bold !important;
 }
 
 .nav-link-menu {
-  font-family: Poppins;
   font-weight: 600;
-  font-size: 18px;
-  color: #000;
+  font-size: 0.9rem;
+  color: $contrast-shade;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .learn-more-btn {
   background-color: #3A88EC;
   font-size: 18px;
-  font-family: Poppins;
   font-weight: 600;
   color: #fff;
   padding: 12px 40px !important;
