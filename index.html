@@ -3,31 +3,11 @@ layout: default
 ---
 
 <div class="header">
-    <div class="container header-container">
-        <div class="col-lg-6 header-img-section">
-            <img src="{{ "/assets/images/Owlfred.svg" | relative_url }}">
-        </div>
-        <div class="col-lg-5 offset-lg-1 header-title-section">
-            <h1 class="header-title">Hi, I'm Owlfred</h1>
-            <p class="header-subtitle">Let's plan your legacy</p>
-            <p class="header-title-text">COMING SOON</p>
-            <br>
-
-                {%- include hubspot-form.html -%}
-<!--            <p class="header-title-text">Sign up for updates</p>-->
-<!--            &lt;!&ndash; Start hubspot form &ndash;&gt;-->
-<!--            &lt;!&ndash;[if lte IE 8]>-->
-<!--            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>-->
-<!--            <![endif]&ndash;&gt;-->
-<!--            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>-->
-<!--            <script>-->
-<!--                hbspt.forms.create({-->
-<!--                    portalId: "8619597",-->
-<!--                    formId: "2a1ad938-4a8a-4b53-8dcf-a16c1eab4555"-->
-<!--                });-->
-<!--            </script>-->
-<!--            &lt;!&ndash; End hubspot form &ndash;&gt;-->
-        </div>
+    <h1 class="header-title">
+        {%- include tagline.html -%}
+    </h1>
+    <div class="header-title-section">
+        {%- include hubspot-form.html -%}
     </div>
 </div>
 
@@ -37,7 +17,8 @@ layout: default
         <div class="col-lg-5 services-title-section">
             <p class="services-subtitle">Virtual Endowlment</p>
             <h2 class="services-title">Legacy Planning</h2>
-            <p class="services-text">You don’t have to be wealthy to leave your loved ones a fortune<br><br>Endowl helps you:<br>
+            <p class="services-text">You don’t have to be wealthy to leave your loved ones a fortune<br><br>Endowl helps
+                you:<br>
             <li>Navigate the process at your own pace</li>
             <li>Quickly inventory assets using our AI-powered mobile app</li>
             <li>Plan and communicate your wishes with your loved ones</li>
@@ -66,10 +47,13 @@ layout: default
             <div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
                 <div class="blog-post-card">
                     <div class="blog-post-icon">
-                        <img src="{{ "/assets/images/headshotKen.jpg" | relative_url }}" style="height: 200px;width: 200px;">
+                        <img src="{{ "/assets/images/headshotKen.jpg" | relative_url }}" style="height: 200px;width:
+                        200px;">
                     </div>
                     <h3 class="blog-post-title">Ken Hodler</h3>
-                    <p class="blog-post-text">Ken was the CTO and an early contributer at KeepKey. He brings over 30 years of experience as a software engineer and entrepreneur and almost 10 years experience with blockchain technology to Endowl.
+                    <p class="blog-post-text">Ken was the CTO and an early contributer at KeepKey. He brings over 30
+                        years of experience as a software engineer and entrepreneur and almost 10 years experience with
+                        blockchain technology to Endowl.
                     </p>
                     <!--								<a  class="blog-post-link" href="#news">Read More</a>-->
                 </div>
@@ -77,21 +61,25 @@ layout: default
             <div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
                 <div class="blog-post-card">
                     <div class="blog-post-icon mb-4">
-                        <img src="{{ "/assets/images/headshotAaron.jpg" | relative_url }}" style="height: 200px;width: 200px;">
+                        <img src="{{ "/assets/images/headshotAaron.jpg" | relative_url }}" style="height: 200px;width:
+                        200px;">
                     </div>
                     <h3 class="blog-post-title">Aaron Anderson</h3>
                     <!--                                <h4 class="blog-post-subtitle">Keywords</h4>-->
-                    <p class="blog-post-text mb-4">Aaron brings dApps to market as a dApp engineer, cofounder of Ching! point of sale, and cofounder of web3devs.</p>
+                    <p class="blog-post-text mb-4">Aaron brings dApps to market as a dApp engineer, cofounder of Ching!
+                        point of sale, and cofounder of web3devs.</p>
                     <!--								<a class="nav-link learn-more-btn" href="#news">Read More</a>-->
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-8 col-xs-10 blog-post-card-container">
                 <div class="blog-post-card">
                     <div class="blog-post-icon">
-                        <img src="{{ "/assets/images/headshotMorgan.jpg" | relative_url }}" style="height: 200px;width: 200px;">
+                        <img src="{{ "/assets/images/headshotMorgan.jpg" | relative_url }}" style="height: 200px;width:
+                        200px;">
                     </div>
                     <h3 class="blog-post-title">Morgan Sherwood</h3>
-                    <p class="blog-post-text">Morgan is a dApp engineer, algorithmic trader, and lifelong developer skilled in Python and smart contract security analysis.</p>
+                    <p class="blog-post-text">Morgan is a dApp engineer, algorithmic trader, and lifelong developer
+                        skilled in Python and smart contract security analysis.</p>
                     <!--								<a class="blog-post-link" href="#news">Read More</a>-->
                 </div>
             </div>

@@ -1,17 +1,22 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-$base-shade-dark: #313665;
-$base-shade-bold: #342177;
-$base-shade-bright: #6E28D0;
-$base-shade-medium: #6440E6;
-$base-shade-muted: #646ECC;
-$base-shade-light: #7783F2;
+$base-shade-dark: #313662;
+$base-shade-bold: #312272;
+$base-shade-bright: #662cc8;
+$base-shade-medium: #5f42de;
+$base-shade-muted: #666ec6;
+$base-shade-light: #7982eb;
 
-$complimentary-shade-bold: #FFC030;
-$complimentary-shade-medium: #FFE171;
+$complimentary-shade-bright: #00FF85;
+$complimentary-shade-muted: #00ffc0;
 
 $contrast-shade: #FFFFFF;
+
+@font-face {
+  font-family: "Lota Grotesque";
+  src: url("../fonts/Lota Grotesque Regular.otf");
+}
 
 /* Checkboxes created from markdown processed by Jekyll and Github Pages */
 .task-list-item {
@@ -35,7 +40,7 @@ $contrast-shade: #FFFFFF;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Lota Grotesque";
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -47,8 +52,7 @@ body {
   color: $contrast-shade;
   padding: 0;
   margin: 0;
-  background-color: $base-shade-muted;
-  letter-spacing: .025ch;
+  background: $base-shade-medium;
 }
 
 h1,
@@ -83,23 +87,24 @@ nav p {
   padding: 0;
   margin: 0 !important;
   overflow: hidden;
+  .bg {
+    background: url(../images/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.15;  }
 }
 
 button:focus {
   outline: none !important;
 }
 
-/* 2. NAVBAR */
-.header-scrolled {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: $base-shade-bold !important;
-  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
-  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
-}
 
+
+/* 2. NAVBAR */
 .navbar {
   background-color: transparent;
   padding-top: 15px;
@@ -107,6 +112,22 @@ button:focus {
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
+  .tagline {
+    opacity: 0;
+  }
+  &.header-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $base-shade-bold !important;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+    .tagline {
+      opacity: 1;
+    }
+  }
+
 }
 
 .navbar-nav {
@@ -155,7 +176,7 @@ button:focus {
 }
 
 .nav-item .nav-link:hover .nav-link-menu {
-  color: $complimentary-shade-bold !important;
+  text-decoration: $complimentary-shade-bright underline;
 }
 
 .nav-link-menu {
@@ -178,6 +199,21 @@ button:focus {
 .learn-more-btn:hover {
   color: #fff;
   background-color: #FF3E81;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: $contrast-shade 1px solid;
+  border-radius: 1em;
+  text-transform: uppercase;
+  &:hover {
+    background-color: transparent;
+    border: $complimentary-shade-bright 1px solid;
+  }
+  &.disabled {
+    background-color: transparent;
+    border: $contrast-shade 1px solid;
+  }
 }
 
 .btn-invert {
@@ -220,9 +256,13 @@ button:focus {
   }
 }
 
+.highlight-word {
+  color: $complimentary-shade-bright;
+}
+
 /* 3. HEADER */
 .header {
-  display: flex;
+  //display: flex;
   width: 100%;
   padding: 175px 0 25px 0;
   justify-content: center;
@@ -241,7 +281,6 @@ button:focus {
 }
 
 .header-subtitle {
-  font-family: Poppins;
   font-size: 27px;
   font-weight: 400;
   line-height: 1.5;
@@ -249,16 +288,13 @@ button:focus {
 }
 
 .header-title {
-  font-family: Montserrat;
   font-weight: 800;
   font-size: 60px;
   line-height: 1;
   padding-bottom: 25px;
-  color: #303669;
 }
 
 .header-title-text {
-  font-family: Poppins;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
