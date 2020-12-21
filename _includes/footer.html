@@ -50,16 +50,25 @@
 
 <!-- Header scroll -->
 <script type="text/javascript">
+  function addScrolled() {
+    $('#navbar').addClass('header-scrolled')
+    $('#hero-image').addClass('scrolled')
+  }
+  function removeScrolled() {
+    $('#navbar').removeClass('header-scrolled')
+    $('#hero-image').removeClass('scrolled')
+  }
+
   $().ready(function() {
     if ($(this).scrollTop() > 20) {
-      $('#navbar').addClass('header-scrolled');
+      addScrolled()
     }
   })
   $(window).scroll(function() {
     if ($(this).scrollTop() > 20) {
-      $('#navbar').addClass('header-scrolled');
+      addScrolled()
     } else {
-      $('#navbar').removeClass('header-scrolled');
+      removeScrolled()
     }
   });
 </script>

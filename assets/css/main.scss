@@ -1,6 +1,14 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+
+#
+Only the main Sass file needs front matter
+
+(
+the dashes are enough
+
+)
 ---
+
 $base-shade-dark: #313662;
 $base-shade-bold: #312272;
 $base-shade-bright: #662cc8;
@@ -28,11 +36,11 @@ $contrast-shade: #FFFFFF;
   vertical-align: middle;
 }
 
-.task-list-item+.task-list-item {
+.task-list-item + .task-list-item {
   margin-top: 3px;
 }
 
-  /* 1. GENERAL */
+/* 1. GENERAL */
 * {
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-os-font-smoothing: grayscale;
@@ -87,21 +95,41 @@ nav p {
   padding: 0;
   margin: 0 !important;
   overflow: hidden;
-  .bg {
-    background: url(../images/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.15;  }
+
+  #hero-image {
+    .bg {
+      background: url(../images/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.15;
+
+      &.scrolled {
+        opacity: 0;
+      }
+
+      .photo-credit {
+        z-index: 100;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        color: $contrast-shade;
+        font-weight: bold;
+
+        a {
+          color: $contrast-shade;
+        }
+      }
+    }
+  }
 }
 
 button:focus {
   outline: none !important;
 }
-
 
 
 /* 2. NAVBAR */
@@ -112,9 +140,11 @@ button:focus {
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
+
   .tagline {
     opacity: 0;
   }
+
   &.header-scrolled {
     position: fixed;
     top: 0;
@@ -123,6 +153,7 @@ button:focus {
     background-color: $base-shade-bold !important;
     -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
     box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+
     .tagline {
       opacity: 1;
     }
@@ -137,12 +168,14 @@ button:focus {
 .navbar-brand {
   display: flex;
   align-items: center;
+
   svg {
     margin-top: 16px;
     margin-left: 15px;
     width: 155px;
     height: auto;
   }
+
   .tagline {
     font-size: 1.25rem;
     color: $contrast-shade;
@@ -206,10 +239,12 @@ button:focus {
   border: $contrast-shade 1px solid;
   border-radius: 1em;
   text-transform: uppercase;
+
   &:hover {
     background-color: transparent;
     border: $complimentary-shade-bright 1px solid;
   }
+
   &.disabled {
     background-color: transparent;
     border: $contrast-shade 1px solid;
