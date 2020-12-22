@@ -86,6 +86,7 @@ title: Sign-up for early access
 
 </style>
 
+
 <div class="header">
     <div class="text-center">
         <h1>Sign-up now for early access,<br>
@@ -95,6 +96,8 @@ title: Sign-up for early access
         </p>
     </div>
 </div>
+
+<div id="error-message"></div>
 
 <div class="mobile">
     <div class="plan">
@@ -111,7 +114,7 @@ title: Sign-up for early access
             <path d="M14.25 2.96875H13.1578C13.0047 2.96875 12.8594 3.03906 12.7656 3.15937L6.32344 11.3203L3.23438 7.40625C3.18765 7.34692 3.12808 7.29895 3.06016 7.26593C2.99223 7.23292 2.91771 7.21572 2.84219 7.21562H1.75C1.64531 7.21562 1.5875 7.33594 1.65156 7.41719L5.93125 12.8391C6.13125 13.0922 6.51563 13.0922 6.71719 12.8391L14.3484 3.16875C14.4125 3.08906 14.3547 2.96875 14.25 2.96875V2.96875Z" fill="#662cc8"/>
         </svg>
         Letters of instructions delivered to appropriate parties
-        <button class="btn btn-primary btn-block">
+        <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14w5FsT7oHHUTkRm0NKow6">
             <strike>$24/year</strike><br>
             $19.20/year
         </button>
@@ -130,7 +133,7 @@ title: Sign-up for early access
             <path d="M14.25 2.96875H13.1578C13.0047 2.96875 12.8594 3.03906 12.7656 3.15937L6.32344 11.3203L3.23438 7.40625C3.18765 7.34692 3.12808 7.29895 3.06016 7.26593C2.99223 7.23292 2.91771 7.21572 2.84219 7.21562H1.75C1.64531 7.21562 1.5875 7.33594 1.65156 7.41719L5.93125 12.8391C6.13125 13.0922 6.51563 13.0922 6.71719 12.8391L14.3484 3.16875C14.4125 3.08906 14.3547 2.96875 14.25 2.96875V2.96875Z" fill="#662cc8"/>
         </svg>
         Automatic digital asset ownership transfer
-        <button class="btn btn-primary btn-block">
+        <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14xyFsT7oHHUTky7QvSdjY">
             <strike>$99/year</strike><br>
             $79.20/year
         </button>
@@ -149,7 +152,7 @@ title: Sign-up for early access
             <path d="M14.25 2.96875H13.1578C13.0047 2.96875 12.8594 3.03906 12.7656 3.15937L6.32344 11.3203L3.23438 7.40625C3.18765 7.34692 3.12808 7.29895 3.06016 7.26593C2.99223 7.23292 2.91771 7.21572 2.84219 7.21562H1.75C1.64531 7.21562 1.5875 7.33594 1.65156 7.41719L5.93125 12.8391C6.13125 13.0922 6.51563 13.0922 6.71719 12.8391L14.3484 3.16875C14.4125 3.08906 14.3547 2.96875 14.25 2.96875V2.96875Z" fill="#662cc8"/>
         </svg>
         Professional estate planner consultations
-        <button class="btn btn-primary btn-block">
+        <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I15jUFsT7oHHUTk7l7oLMep">
             <strike>$249/year</strike><br>
             $199.20/year
         </button>
@@ -163,21 +166,21 @@ title: Sign-up for early access
                 <th class="feature-name"></th>
                 <th class="plan">
                     <h3>basic</h3>
-                    <button class="btn btn-primary btn-block">
+                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14w5FsT7oHHUTkRm0NKow6">
                         <strike>$24/year</strike><br>
                         $19.20/year
                     </button>
                 </th>
                 <th class="plan">
                     <h3>standard</h3>
-                    <button class="btn btn-primary btn-block">
+                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14xyFsT7oHHUTky7QvSdjY">
                         <strike>$99/year</strike><br>
                         $79.20/year
                     </button>
                 </th>
                 <th class="plan">
                     <h3>elite</h3>
-                    <button class="btn btn-primary btn-block">
+                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I15jUFsT7oHHUTk7l7oLMep">
                         <strike>$249/year</strike><br>
                         $199.20/year
                     </button>
@@ -285,8 +288,11 @@ title: Sign-up for early access
     </table>
 </div>
 
-
 <p class="footnote">
     <small>* The Endowl service and application are under active development. By signing up now you will secure your place among the first users. Your credit card will not be charged until the service becomes live.  In the unlikely event that the service and application do not get completed you will not be charged.</small>
 </p>
+
+<!-- Load Stripe library and apply event listeners to checkout buttons -->
+<script src="https://js.stripe.com/v3"></script>
+<script src="assets/js/stripe-checkout-buttons.js"></script>
 
