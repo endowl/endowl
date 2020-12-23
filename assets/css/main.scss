@@ -213,14 +213,16 @@ button:focus {
 }
 
 .btn-primary {
-  background-color: transparent;
-  border: $contrast-shade 1px solid;
+  background-color: $base-shade-muted;
+  border: none;
   border-radius: 1em;
   text-transform: uppercase;
+  color: $contrast-shade;
 
   &:hover {
-    background-color: transparent;
-    border: $complimentary-shade-bright 1px solid;
+    background-color: $base-shade-light;
+    border: none;
+    color: $contrast-shade;
   }
 
   &.disabled {
@@ -276,7 +278,7 @@ button:focus {
 /* 3. HEADER */
 .header {
   width: 100%;
-  padding: 100px 0 25px;
+  padding: 250px 0 25px;
 }
 
 .header-subtitle {
@@ -290,7 +292,6 @@ button:focus {
   font-weight: 800;
   font-size: 60px;
   line-height: 1;
-  padding: 150px 0;
 }
 
 //.header-title-text {
@@ -312,8 +313,26 @@ button:focus {
   }
   span[style="font-family: verdana, geneva; font-size: 16px;"] {
     font-family: "Lota Grotesque", Verdana, Geneva !important;
-    font-size: initial;
+    font-size: initial !important;
   }
+  .hs-richtext {
+    h1 span[style="font-family: verdana, geneva; font-size: 16px;"] {
+      font-size: 40px !important;
+      color: $complimentary-shade-muted;
+    }
+  }
+  .hs-input {
+    width: 100%;
+  }
+  .hs-error-msgs, .hs_error_rollup {
+    color: $complimentary-shade-muted;
+    list-style-type: none;
+    padding: 0;
+  }
+  .hs-button {
+    @extend .btn-primary;
+  }
+
 }
 
 .content {
