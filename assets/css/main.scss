@@ -49,7 +49,7 @@ html {
 }
 
 body {
-  font-family: "Lota Grotesque";
+  font-family: "Lota Grotesque", Verdana, Geneva;
   color: $contrast-shade;
   padding: 0;
   margin: 0;
@@ -90,32 +90,17 @@ nav p {
   overflow: hidden;
 
   #hero-image {
-    .bg {
-      background: url(../images/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
-      background-size: cover;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0.15;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.25;
 
-      &.scrolled {
-        opacity: 0;
-      }
-
-      .photo-credit {
-        z-index: 100;
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        color: $contrast-shade;
-        font-weight: bold;
-
-        a {
-          color: $contrast-shade;
-        }
-      }
+    &.scrolled {
+      opacity: 0;
     }
   }
 }
@@ -290,22 +275,8 @@ button:focus {
 
 /* 3. HEADER */
 .header {
-  //display: flex;
   width: 100%;
-  padding: 175px 0 25px 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.header-img-section img {
-  width: 100%;
+  padding: 100px 0 25px;
 }
 
 .header-subtitle {
@@ -319,14 +290,30 @@ button:focus {
   font-weight: 800;
   font-size: 60px;
   line-height: 1;
-  padding-bottom: 25px;
+  padding: 150px 0;
 }
 
-.header-title-text {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.5;
-  padding-bottom: 15px;
+//.header-title-text {
+//  font-size: 18px;
+//  font-weight: 300;
+//  line-height: 1.5;
+//  padding-bottom: 15px;
+//}
+
+.header-title-section {
+  padding: 20px;
+  background-color: $base-shade-bold;
+  border-radius: 10px;
+  .grecaptcha-badge {
+    transform:scale(0.5);
+    -webkit-transform:scale(0.5);
+    transform-origin:0 ;
+    -webkit-transform-origin:0;
+  }
+  span[style="font-family: verdana, geneva; font-size: 16px;"] {
+    font-family: "Lota Grotesque", Verdana, Geneva !important;
+    font-size: initial;
+  }
 }
 
 .content {

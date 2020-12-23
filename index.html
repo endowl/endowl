@@ -2,12 +2,20 @@
 layout: default
 ---
 
-<div class="header">
-    <h1 class="header-title">
-        {%- include tagline.html -%}
-    </h1>
-    <div class="header-title-section">
-        {%- include hubspot-form.html -%}
+<div class="header container">
+    <div class="row">
+        <h1 class="header-title col-lg-7">
+            {%- include tagline.html -%}
+        </h1>
+    </div>
+    <div class="row">
+        <div class="header-subtitle col-lg-8">
+            Endowl gives you tools to explore the who and what is most important to you and create a plan for how
+            they will be taken care of when if when you are gone.
+        </div>
+        <div class="header-title-section col-lg-4">
+            {%- include hubspot-homepage-form.html -%}
+        </div>
     </div>
 </div>
 
