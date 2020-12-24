@@ -26,9 +26,10 @@ $primary: $base-shade-bright;
 $secondary: $base-shade-light;
 $border-color: $contrast-shade;
 
-//$theme-colors: (
-//        "primary": $
-//);
+$link-color: $contrast-shade;
+$link-decoration: none;
+$link-hover-color: $contrast-shade;
+$link-hover-decoration: underline $complimentary-shade-bright;
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
@@ -221,7 +222,6 @@ button:focus {
 
 @media screen and (max-width: 991.98px) {
   .navbar {
-    background-color: #FFFFFF;
     -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
     box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
   }
@@ -288,28 +288,24 @@ button:focus {
   }
 
   .navbar-collapse {
-    background-color: rgba(255, 255, 255, 1);
-    color: #505050;
+    background-color: $contrast-shade;
+    color: $base-shade-dark;
     padding-bottom: 20px;
     padding-top: 20px;
     margin-bottom: 20px;
   }
 
   .navbar-collapse .nav-link-menu {
-    color: #505050;
+    color: $base-shade-dark;
   }
 
   .nav-link-number {
-    color: #fff;
+    color: $contrast-shade;
     display: none;
   }
 
   .nav-link-menu {
-    color: #fff;
-  }
-
-  .learn-more-btn-section {
-    justify-content: center;
+    color: $contrast-shade;
   }
 }
 
@@ -336,432 +332,6 @@ button:focus {
   .header-title-text {
     font-size: 18px;
   }
-}
-
-/* 4. STRATEGY SECTION */
-.strategy-section {
-  position: relative;
-}
-
-.strategy-section-bg-graphics-section {
-  position: absolute;
-  width: 22%;
-  right: -5%;
-  top: -45%;
-}
-
-.strategy-section-bg-graphics-section img {
-  width: 100%;
-}
-
-.strategy-container {
-  position: relative;
-  display: flex;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  flex-wrap: wrap;
-}
-
-.strategy-card-section {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.strategy-card {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.strategy-card img {
-  height: 80px;
-}
-
-.strategy-card h2 {
-  color: #303669;
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 3;
-}
-
-.strategy-card p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000;
-  font-family: Poppins;
-  font-weight: 300;
-  max-width: 300px;
-}
-
-@media screen and (max-width: 576.98px) {
-  .strategy-container {
-    flex-direction: column;
-  }
-}
-
-/* 5. SERVICES SECTION */
-.services-section {
-  position: relative;
-}
-
-.services-section-bg-graphics {
-  position: absolute;
-  width: 25%;
-  left: -17%;
-  top: -20%;
-}
-
-.services-section-bg-graphics img {
-  width: 100%;
-}
-
-.services-container {
-  position: relative;
-  display: flex;
-  padding-top: 55px;
-  padding-bottom: 55px;
-  flex-wrap: wrap;
-}
-
-.services-header-img-section img {
-  width: 100%;
-}
-
-.services-title-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-  width: 100%;
-}
-
-.services-subtitle {
-  font-family: Poppins;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 2;
-}
-
-.services-title {
-  font-family: Montserrat;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 1;
-  color: #303669;
-  margin-bottom: 20px;
-}
-
-.services-text {
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.services-accordion .accordion {
-  font-size: 18px;
-  font-family: Poppins;
-  font-weight: 600;
-  color: #fff;
-  background-color: #3A88EC;
-  border-radius: 50px;
-  padding: 10px 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.services-accordion .accordion::after {
-  color: #fff !important;
-}
-
-.accordion:active, .accordion:hover {
-  background-color: #78C2FF !important;
-}
-
-.services-accordion .panel {
-  background-color: transparent !important;
-}
-
-.services-accordion .panel p {
-  color: #A5A5A5;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.5;
-}
-
-@media screen and (max-width: 991.98px) {
-  .services-section .services-container {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .services-container img {
-    margin-bottom: 25px;
-  }
-
-  .services-title-section {
-    text-align: center;
-  }
-}
-
-/* 6. PRICING SECTION */
-.pricing-section {
-  display: flex;
-  padding-top: 55px;
-  padding-bottom: 55px;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.pricing-section-left-bg-graphics {
-  position: absolute;
-  top: -15%;
-  right: -10%;
-  z-index: -1;
-}
-
-.pricing-section-left-bg-graphics img {
-  width: 100%;
-}
-
-.pricing-section-right-bg-graphics {
-  position: absolute;
-  left: -5%;
-  bottom: -10%;
-}
-
-.pricing-section-right-bg-graphics img {
-  width: 100%;
-}
-
-.pricing-container {
-  background-color: transparent;
-}
-
-.pricing-title {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.pricing-title h2 {
-  font-family: Montserrat;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 1;
-  color: #303669;
-  margin-bottom: 20px;
-}
-
-.pricing-title p {
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.5;
-  max-width: 700px;
-}
-
-.pricing-plan-cards-section {
-  display: flex;
-  flex-direction: row;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  justify-content: center;
-  align-items: center;
-}
-
-.pricing-card-section {
-  padding: 20px;
-}
-
-.pricing-card {
-  background-color: rgba(255, 255, 255, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 45px 40px 55px 40px;
-  border-radius: 50px;
-  text-align: center;
-}
-
-.pricing-card:hover {
-  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-}
-
-.pricing-rate {
-  color: #303669;
-  font-weight: 800;
-  font-family: Montserrat;
-  font-size: 59px;
-  line-height: 1;
-}
-
-.featured {
-  border: 7px dashed #78C2FF;
-}
-
-.featured .pricing-rate:before {
-  content: "Popular";
-  display: block;
-  width: 95px;
-  font-size: 12px;
-  font-weight: 600;
-  margin: 0 auto 15px auto;
-  border-radius: 100px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #78C2FF;
-  padding: 10px 15px;
-}
-
-.pricing-period {
-  font-size: 18px;
-  font-family: Poppins;
-  font-weight: 600;
-  color: #78C2FF;
-}
-
-.pricing-text {
-  font-size: 18px;
-  font-family: Poppins;
-  font-weight: 400;
-  color: #000;
-  margin-top: 20px;
-}
-
-.pricing-all-plan-features-section {
-  text-align: left;
-  width: 100%;
-  display: flex;
-  margin: 15px 0;
-}
-
-.pricing-all-plan-features-section ul {
-  list-style: none;
-  padding-left: 20px;
-}
-
-.pricing-all-plan-features-section li {
-  font-size: 14px;
-  color: #000;
-  font-family: Poppins;
-  font-weight: 300;
-  line-height: 2;
-  background: url(../images/pricing-section-true.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 5px 5px;
-  padding-left: 35px;
-  text-align: left;
-  margin-top: 5px;
-}
-
-.basic-plan-features-section li:nth-child(3) {
-  background: url(../images/pricing-section-false.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 5px 5px;
-  padding-left: 35px;
-}
-
-.basic-plan-features-section li:nth-child(4) {
-  background: url(../images/pricing-section-false.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 5px 5px;
-  padding-left: 35px;
-}
-
-.medium-plan-features-section li:nth-child(4) {
-  background: url(../images/pricing-section-false.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 5px 5px;
-  padding-left: 35px;
-}
-
-@media screen and (max-width: 991.98px) {
-  .pricing-plan-cards-section {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pricing-title p {
-    max-width: 428px;
-  }
-}
-
-/* 7. CLIENTS SECTION */
-.clients-section {
-  display: flex;
-  background-color: transparent;
-}
-
-.clients-title-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.clients-subtitle {
-  font-family: Poppins;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 2;
-}
-
-.clients-title {
-  font-family: Montserrat;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 1;
-  color: #303669;
-  margin-bottom: 20px;
-}
-
-.client-logo-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-}
-
-.client-logo-section img {
-  height: 105px;
-  width: auto !important;
-}
-
-.owl-theme .owl-nav {
-  display: none;
-}
-
-.owl-theme .owl-dots, .owl-theme .owl-nav {
-  margin-top: 20px;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  background-color: #CCCCCC !important;
-}
-
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #3A88EC !important;
 }
 
 /* 8. NEWS SECTION */
@@ -798,46 +368,33 @@ button:focus {
 }
 
 .blog-subtitle {
-  font-family: Poppins;
   font-size: 22px;
   font-weight: 400;
   line-height: 2;
 }
 
 .blog-title {
-  font-family: Montserrat;
   font-weight: 800;
   font-size: 45px;
   line-height: 1;
-  color: #303669;
   margin-bottom: 0;
 }
 
 .blog-posts-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
 }
 
 .blog-post-card-container {
   padding: 20px;
+  height: 510px;
 }
 
 .blog-post-card {
-  background-color: rgba(255, 255, 255, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background-color: $contrast-shade;
   border-radius: 50px;
   padding: 55px 20px;
-}
-
-.blog-post-card:hover {
-  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  background-color: #fff;
+  height: 100%;
 }
 
 .blog-post-icon {
@@ -854,15 +411,14 @@ button:focus {
 .blog-post-title {
   font-size: 20px;
   color: #303669;
-  font-family: Montserrat;
   font-weight: 700;
   line-height: 2;
+  text-align: center;
 }
 
 .blog-post-subtitle {
   font-size: 18px;
   color: #CCCCCC;
-  font-family: Montserrat;
   line-height: 1;
   margin-bottom: 10px;
 }
@@ -870,7 +426,6 @@ button:focus {
 .blog-post-text {
   font-size: 14px;
   color: #000;
-  font-family: Poppins;
   font-weight: 300;
   line-height: 1.5;
   text-align: center;
@@ -881,7 +436,6 @@ button:focus {
 .blog-post-link {
   color: #A4C4F3;
   font-size: 18px;
-  font-family: Montserrat;
   font-weight: 700;
   line-height: 1;
   margin-top: 10px;
@@ -927,14 +481,12 @@ button:focus {
 }
 
 .contact-subtitle {
-  font-family: Poppins;
   font-size: 22px;
   font-weight: 400;
   line-height: 2;
 }
 
 .contact-title {
-  font-family: Montserrat;
   font-weight: 800;
   font-size: 45px;
   line-height: 1;
@@ -943,7 +495,6 @@ button:focus {
 }
 
 .contact-text {
-  font-family: Poppins;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
@@ -963,213 +514,5 @@ button:focus {
   }
 }
 
-/* 10. FOOTER SECTION */
-.footer-section {
-  padding-top: 75px;
-  padding-bottom: 55px;
-  margin-bottom: 0px !important;
-  position: relative;
-  background-color: #303669;
-  color: #FFFFFF;
-}
-
-.footer-section a {
-  color: #D4E5FF;
-}
-
-.footer-section-bg-graphics {
-  position: absolute;
-  right: -10%;
-  bottom: 0%;
-}
-
-.footer-container {
-  display: flex;
-  position: relative;
-}
-
-.footer-logo {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  padding-right: 40px;
-}
-
-.footer-logo img {
-  width: 125px;
-  margin-bottom: 15px;
-}
-
-.footer-logo p {
-  max-width: 250px;
-  font-family: Poppins;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 300;
-}
-
-.footer-form {
-  padding-right: 0px !important;
-}
-
-.footer-subsection {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.footer-subsection-title {
-  font-size: 27px;
-  font-family: Poppins;
-  font-weight: 700;
-  color: #FFFFFF;
-  line-height: 2.2;
-  margin-bottom: 10px;
-}
-
-.footer-subsection-text {
-  font-family: Montserrat;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.footer-subsection-2-1 {
-  margin-bottom: 20px;
-}
-
-.footer-subsection-2-2 {
-  margin-bottom: 20px;
-}
-
-.footer-subsection-list {
-  list-style: none;
-  padding-left: 28px;
-}
-
-.footer-subsection-list li {
-  font-size: 16px;
-  color: #FFFFFF;
-  font-family: Montserrat;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: left;
-  margin-top: 10px;
-  display: table-row;
-}
-
-.footer-subsection-list li:after {
-  content: "";
-  display: block;
-  margin-bottom: 10px;
-}
-
-.footer-subsection-list li:nth-child(1):before {
-  font-family: "FontAwesome";
-  content: "\f041";
-  font-size: 25px;
-  line-height: 1.25;
-  left: 41px;
-  position: absolute;
-  display: table-cell;
-  color: #A4C4F3;
-}
-
-.footer-subsection-list li:nth-child(2):before {
-  font-family: "FontAwesome";
-  content: "\f095";
-  font-size: 20px;
-  line-height: 1.25;
-  left: 41px;
-  position: absolute;
-  display: table-cell;
-  color: #A4C4F3;
-}
-
-.footer-subsection-list li:nth-child(3):before {
-  font-family: "FontAwesome";
-  content: "\f0e0";
-  font-size: 17px;
-  line-height: 1.25;
-  left: 41px;
-  position: absolute;
-  display: table-cell;
-  color: #A4C4F3;
-}
-
-.footer-subsection-list-call {
-  color: #FFFFFF;
-}
-
-.footer-subsection-list-email {
-  color: #FFFFFF;
-}
-
-.footer-subsection-list-call:hover {
-  color: #FF3E81;
-  text-decoration: none;
-}
-
-.footer-subsection-list-email:hover {
-  color: #FF3E81;
-  text-decoration: none;
-}
-
-.footer-social-media-icons-section {
-  display: flex;
-}
-
-.footer-social-media-icon {
-  justify-content: center;
-  align-items: center;
-  padding-right: 25px;
-}
-
-.footer-social-media-icon .fa {
-  color: #FFFFFF;
-  font-size: 29px;
-  text-decoration: none !important;
-}
-
-.footer-social-media-icon .fa:hover {
-  color: #3A88EC;
-}
-
-.footer-credits {
-  padding-top: 40px;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.footer-credits p {
-  font-size: 16px;
-  font-weight: 400;
-  color: #D4E5FF;
-  font-family: Montserrat;
-  line-height: 1;
-}
-
-.footer-credits a {
-  font-weight: 700;
-}
-
-@media screen and (max-width: 991.98px) {
-  .footer-container {
-    flex-wrap: wrap;
-  }
-
-  .footer-logo {
-    padding-left: 40px;
-  }
-
-  .footer-form {
-    padding-right: 40px !important;
-  }
-
-  .footer-subsection-form-input {
-    width: 85%;
-  }
-}
-
 @import "hubspot-beta-signup-form";
+@import "footer";

@@ -1,0 +1,147 @@
+.footer-section {
+  padding-top: 75px;
+  padding-bottom: 55px;
+  margin-bottom: 0px !important;
+  position: relative;
+  background-color: $base-shade-dark;
+}
+
+.footer-section-bg-graphics {
+  position: absolute;
+  right: -10%;
+  bottom: 0%;
+}
+
+.footer-container {
+  display: flex;
+  position: relative;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-right: 40px;
+}
+
+.footer-logo img {
+  width: 125px;
+  margin-bottom: 15px;
+}
+
+.footer-logo p {
+  max-width: 250px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.footer-form {
+  padding-right: 0px !important;
+}
+
+.footer-subsection {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.footer-subsection-title {
+  font-size: 27px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 2.2;
+  margin-bottom: 10px;
+}
+
+.footer-subsection-text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.footer-subsection-2-1 {
+  margin-bottom: 20px;
+}
+
+.footer-subsection-2-2 {
+  margin-bottom: 20px;
+}
+
+.footer-subsection-list {
+  list-style: none;
+  padding-left: 28px;
+}
+
+.footer-subsection-list li {
+  font-size: 16px;
+  color: $contrast-shade;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 10px;
+  display: table-row;
+}
+
+.footer-subsection-list li:after {
+  content: "";
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-social-media-icons-section {
+  display: flex;
+}
+
+.footer-social-media-icon {
+  justify-content: center;
+  align-items: center;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.footer-social-media-icon .fa {
+  color: $contrast-shade;
+  font-size: 29px;
+  text-decoration: none !important;
+}
+
+.footer-social-media-icon .fa:hover {
+  color: $complimentary-shade-bright;
+}
+
+.footer-credits {
+  padding-top: 40px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-credits p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #D4E5FF;
+  line-height: 1;
+}
+
+.footer-credits a {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 991.98px) {
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    padding-left: 40px;
+  }
+
+  .footer-form {
+    padding-right: 40px !important;
+  }
+
+  .footer-subsection-form-input {
+    width: 85%;
+  }
+}
