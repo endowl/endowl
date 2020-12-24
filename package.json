@@ -1,0 +1,11 @@
+{
+  "name": "endowl-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/BatmansButler/alfred-site.git",
+  "author": "ken@endowl.com",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}

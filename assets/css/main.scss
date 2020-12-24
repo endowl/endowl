@@ -1,7 +1,6 @@
 ---
 #  Only the main Sass file needs front matter (the dashes are enough)
 ---
-
 $base-shade-dark: #313662;
 $base-shade-bold: #312272;
 $base-shade-bright: #662cc8;
@@ -17,6 +16,30 @@ $contrast-shade: #FFFFFF;
 @font-face {
   font-family: "Lota Grotesque";
   src: url("../fonts/Lota Grotesque Regular.otf");
+}
+
+// Theme colors
+$body-bg: $base-shade-medium;
+$body-color: $contrast-shade;
+$font-family-base: "Lota Grotesque", Verdana, Geneva;
+$primary: $base-shade-bright;
+$secondary: $base-shade-light;
+$border-color: $contrast-shade;
+
+//$theme-colors: (
+//        "primary": $
+//);
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Overrides
+.btn {
+  color: $contrast-shade;
+  border-radius: 1em;
+  &.disabled,
+  &:disabled {
+    background-color: transparent;
+  }
 }
 
 /* Checkboxes created from markdown processed by Jekyll and Github Pages */
@@ -41,19 +64,14 @@ $contrast-shade: #FFFFFF;
 }
 
 html {
-  font-family: "Lota Grotesque";
   padding: 0;
-  margin: 0;
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
 
 body {
-  font-family: "Lota Grotesque", Verdana, Geneva;
-  color: $contrast-shade;
   padding: 0;
   margin: 0;
-  background: $base-shade-medium;
 }
 
 h1,
@@ -156,7 +174,6 @@ button:focus {
 
   .tagline {
     font-size: 1.25rem;
-    color: $contrast-shade;
     line-height: 1.35rem;
     margin-left: 30px;
   }
@@ -196,47 +213,6 @@ button:focus {
   color: $contrast-shade;
   line-height: 1;
   text-transform: uppercase;
-}
-
-.learn-more-btn {
-  background-color: #3A88EC;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  padding: 12px 40px !important;
-  border-radius: 100px;
-}
-
-.learn-more-btn:hover {
-  color: #fff;
-  background-color: #FF3E81;
-}
-
-.btn-primary {
-  background-color: $base-shade-muted;
-  border: none;
-  border-radius: 1em;
-  text-transform: uppercase;
-  color: $contrast-shade;
-
-  &:hover {
-    background-color: $base-shade-light;
-    border: none;
-    color: $contrast-shade;
-  }
-
-  &.disabled {
-    background-color: transparent;
-    border: $contrast-shade 1px solid;
-  }
-}
-
-.btn-invert {
-  background-color: #FF3E81 !important;
-}
-
-.btn-invert:hover {
-  background-color: #3A88EC !important;
 }
 
 .navbar-toggler-icon {
@@ -294,31 +270,36 @@ button:focus {
   line-height: 1;
 }
 
-//.header-title-text {
-//  font-size: 18px;
-//  font-weight: 300;
-//  line-height: 1.5;
-//  padding-bottom: 15px;
-//}
-
-.header-title-section {
+.header-form {
+  margin-top: 5rem;
   padding: 20px;
-  background-color: $base-shade-bold;
+  background-color: $secondary;
   border-radius: 10px;
+  .hs_email label {
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+  }
+  $recaptcha-rescale-factor: 0.75;
+  .hs_recaptcha {
+    float: right;
+    margin-top: 0.5rem;
+  }
+  .hs-submit {
+    float: left;
+    margin-top: 0.8rem;
+  }
   .grecaptcha-badge {
-    transform:scale(0.5);
-    -webkit-transform:scale(0.5);
+    transform:scale($recaptcha-rescale-factor);
+    -webkit-transform:scale($recaptcha-rescale-factor);
+    width: $recaptcha-rescale-factor * 256px !important;
+    height: $recaptcha-rescale-factor * 60px !important;
     transform-origin:0 ;
     -webkit-transform-origin:0;
   }
-  span[style="font-family: verdana, geneva; font-size: 16px;"] {
-    font-family: "Lota Grotesque", Verdana, Geneva !important;
-    font-size: initial !important;
-  }
   .hs-richtext {
-    h1 span[style="font-family: verdana, geneva; font-size: 16px;"] {
-      font-size: 40px !important;
-      color: $complimentary-shade-muted;
+    span[style="font-family: verdana, geneva; font-size: 16px;"] {
+      font-family: $font-family-base !important;
+      font-size: 1.1rem !important;
     }
   }
   .hs-input {
@@ -330,6 +311,7 @@ button:focus {
     padding: 0;
   }
   .hs-button {
+    @extend .btn;
     @extend .btn-primary;
   }
 
@@ -340,13 +322,6 @@ button:focus {
   width: 80%;
   justify-content: center;
   align-items: center;
-}
-
-.learn-more-btn-section {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-top: 20px;
 }
 
 @media screen and (max-width: 991.98px) {
