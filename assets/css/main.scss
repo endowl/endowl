@@ -1,6 +1,6 @@
 ---
-#  Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 $base-shade-dark: #313662;
 $base-shade-bold: #312272;
 $base-shade-bright: #662cc8;
@@ -37,6 +37,7 @@ $link-hover-decoration: underline $complimentary-shade-bright;
 .btn {
   color: $contrast-shade;
   border-radius: 1em;
+
   &.disabled,
   &:disabled {
     background-color: transparent;
@@ -68,11 +69,13 @@ html {
   padding: 0;
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+  height: 100%;
 }
 
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 h1,
@@ -101,26 +104,25 @@ nav p {
   padding: 0 !important;
 }
 
-.wrapper {
-  width: 100%;
+$background-gradient-bottom: adjust-color($base-shade-dark, $alpha: -0.1);
+$background-gradient-top: adjust-color($base-shade-medium, $alpha: -0.1);
+#hero-image {
+  background: linear-gradient($background-gradient-top, $background-gradient-bottom), url(../images/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
   height: 100%;
-  padding: 0;
-  margin: 0 !important;
-  overflow: hidden;
+  min-height: 800px;
+  &.scrolled {
+    background: none;
+  }
 
-  #hero-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url(../images/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
-    background-size: cover;
-    opacity: 0.25;
-
-    &.scrolled {
-      opacity: 0;
-    }
+  .hero-content {
+    position: absolute;
+    height: 100%;
+    min-height: 800px;
+    width: 100%;
   }
 }
 
@@ -142,7 +144,7 @@ button:focus {
     opacity: 0;
   }
 
-  &.header-scrolled {
+  &.scrolled {
     position: fixed;
     top: 0;
     left: 0;
@@ -231,7 +233,7 @@ button:focus {
     padding: 10px 0;
   }
 
-  .header-scrolled {
+  .scrolled {
     height: inherit;
   }
 }
@@ -511,6 +513,27 @@ button:focus {
 
   .contact-title-section {
     text-align: center;
+  }
+}
+
+#about-section {
+  position: relative;
+  top: -($nav-link-padding-y + $line-height-base);
+  height: 100%;
+  min-height: 800px;
+  &.scrolled {
+    top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .wrapper {
+    background-color: $contrast-shade;
+    color: $base-shade-dark;
+    height: 100%;
+    min-height: 800px;
+  }
+  .nav-tabs .nav-link.active {
+    background-color: white;
+    border-color: white;
   }
 }
 

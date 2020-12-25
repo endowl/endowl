@@ -3,24 +3,36 @@ layout: default
 ---
 {%- include homepage/above-the-fold.html -%}
 
-<div id="inheritance"></div>
-<div class="services-sales-section">
-    <div class="container services-container">
-        <div class="col-lg-5 services-title-section">
-            <p class="services-subtitle">Virtual Endowlment</p>
-            <h2 class="services-title">Legacy Planning</h2>
-            <p class="services-text">You don’t have to be wealthy to leave your loved ones a fortune<br><br>Endowl helps
-                you:<br>
-            <li>Navigate the process at your own pace</li>
-            <li>Quickly inventory assets using our AI-powered mobile app</li>
-            <li>Plan and communicate your wishes with your loved ones</li>
-            </p>
-        </div>
-        <div class="col-lg-6 offset-lg-1 services-header-img-section padding-0">
-            <img src="{{ "/assets/images/services-header.png" | relative_url }}">
+<div id="about"></div>
+<div id="about-section">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ "/index.html#about" | relative_url }}">What's your plan?</a>
+        </li>
+    </ul>
+    <div class="wrapper">
+        <div class="container services-container">
+            <div class="col-lg-5 services-title-section">
+                <p class="services-subtitle">Smart Estate Planning</p>
+                <h2 class="services-title">Legacy Planning</h2>
+                <p class="services-text">You don’t have to be wealthy to leave your loved ones a fortune<br><br>Endowl
+                    helps
+                    you:<br>
+                <li>Navigate the process at your own pace</li>
+                <li>Quickly inventory assets using our AI-powered mobile app</li>
+                <li>Plan and communicate your wishes with your loved ones</li>
+                </p>
+            </div>
+            <div class="col-lg-6 offset-lg-1 services-header-img-section padding-0">
+                <img src="{{ "/assets/images/services-header.png" | relative_url }}">
+            </div>
         </div>
     </div>
 </div>
 
 <div id="team"></div>
 {%- include homepage/team.html -%}
+
+<div class="bottom-cta container align-content-center w-25 mb-5">
+    {%- include hubspot-beta-signup-form.html -%}
+</div>
