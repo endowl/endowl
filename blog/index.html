@@ -1,31 +1,35 @@
 ---
 layout: page
-title: Blogs from Endowl 🦉
+title: Blog
 permalink: /blog/
 ---
 
 {%- if site.posts.size > 0 -%}
-<div class="content">
-<div class="col-sm-12">
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-  <ul class="post-list">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-content-center">
     {%- for post in site.posts -%}
-    <li>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h3>
-      {%- if site.show_excerpts -%}
-        <div>{{ post.excerpt }}</div>
-        <a href="{{ post.url | relative_url }}">continue reading...</a>
-      {%- endif -%}
-    </li>
+    <div class="col">
+        <div class="card bg-secondary">
+            {%- if post.image -%}
+            <img src="{{ post.image | relative_url}}" class="card-img-top">
+            {%- endif -%}
+            <div class="card-body">
+                <div class="card-text">
+                    <h3 class="card-title">
+                        <a class="post-link" href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                        </a>
+                    </h3>
+                    {%- if post.subtitle -%}
+                    <p class="card-subtitle font-weight-bold text-white">{{ post.subtitle | escape}}</p>
+                    {%- endif -%}
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <p class="font-italic small">{{ post.date | date: date_format }}</p>
+                    {{ post.excerpt }}
+                    <div><a href="{{ post.url | relative_url }}">continue reading...</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
     {%- endfor -%}
-  </ul>
 </div>
-</div>
-<p></p>
 {%- endif -%}
