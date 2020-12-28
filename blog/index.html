@@ -23,7 +23,7 @@ permalink: /blog/
                     <p class="card-subtitle font-weight-bold text-white">{{ post.subtitle | escape}}</p>
                     {%- endif -%}
                     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                    <p class="font-italic small">{{ post.date | date: date_format }}</p>
+                    <p class="fst-italic small">{{ post.date | date: date_format }}</p>
                     {{ post.excerpt }}
                     <div><a href="{{ post.url | relative_url }}">continue reading...</a></div>
                 </div>
