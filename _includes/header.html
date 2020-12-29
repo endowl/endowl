@@ -1,12 +1,14 @@
-
 <!-- NAVBAR -->
 <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-header navbar-mobile">
   <div class="navbar-container container">
     <!-- LOGO -->
     <div class="navbar-brand">
       <a class="navbar-brand-logo" href="{{ "/index.html#top" | relative_url }}">
-        <img src="{{ "/assets/images/Endowlhoriz.png" | relative_url }}" width="155px" alt="Endowl">
+        {%- include svg/logo.svg -%}
       </a>
+      <div class="tagline">
+        {%- include tagline.html -%}
+      </div>
     </div>
     <button class="navbar-toggler"
             type="button"
@@ -20,30 +22,24 @@
     <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
       <ul class="navbar-nav menu-navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="{{ "/index.html#top" | relative_url }}">
-            <p class="nav-link-number">1</p>
-            <p class="nav-link-menu">Home</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ "/index.html#inheritance" | relative_url }}">
-            <p class="nav-link-number">2</p>
+          <a class="nav-link" href="{{ "/index.html#about" | relative_url }}">
             <p class="nav-link-menu">About</p>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ "/index.html#team" | relative_url }}">
-            <p class="nav-link-number">3</p>
             <p class="nav-link-menu">Team</p>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ "/blog/" | relative_url }}">
-            <p class="nav-link-number">4</p>
             <p class="nav-link-menu">Blog</p>
           </a>
         </li>
       </ul>
+    </div>
+    <div class="btn btn-primary disabled">
+      Coming soon
     </div>
   </div>
 </nav>

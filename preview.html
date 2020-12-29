@@ -3,37 +3,43 @@ layout: default
 ---
 <div class="header">
     <div class="container header-container">
-        <div class="col-lg-6 header-img-section">
-            <img src="{{ "/assets/images/Owlfred.svg" | relative_url }}">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 header-img-section">
+                {%- include svg/alfred.svg -%}
+            </div>
+            <div class="col-lg-5 offset-lg-1 header-title-section">
+                <h1 class="header-title">Hi, I'm Alfred</h1>
+                <p class="header-subtitle">Let's plan your legacy</p>
+                <p>
+                    Our goal at Endowl is to transform estate planning from an opaque and hard to understand process
+                    into something simple and empowering. </p>
+                <p>
+                    We are interviewing users like you to make sure we create the friendliest estate planning tool ever.
+                </p>
+                <p>
+                    We would love to hear your feedback and get your thoughts on our demo application. It doesn't matter
+                    whether
+                <ul>
+                    <li>You currently have an estate plan</li>
+                    <li>Aren't sure whether you need one</li>
+                    <li>Know you need one, but haven't gotten around doing it</li>
+                </ul>
+                </p>
+                <p>
+                    We aren't trying to sell you anything, we just want your feedback. We want to build an application
+                    that helps you identify the things and people that are most important to you and use that as a
+                    foundation for an estate plan.
+                </p>
+                <p>
+                    If you are interested, sign up below and someone will get back to you shortly to set up an
+                    appointment.
+                </p>
+            </div>
         </div>
-        <div class="col-lg-5 offset-lg-1 header-title-section">
-            <h1 class="header-title">Hello, I'm Alfred</h1>
-            <p class="header-subtitle">Let's plan your legacy</p>
-            <p>
-                Our goal at Endowl is to transform estate planning from an opaque and hard to understand process into
-                something simple and empowering. </p>
-            <p>
-                We are interviewing users like you to make sure we create the friendliest estate planning tool ever.
-            </p>
-            <p>
-                We would love to hear your feedback and get your thoughts on our demo application. It doesn't matter
-                whether
-            <ul>
-                <li>You currently have an estate plan</li>
-                <li>Aren't sure whether you need one</li>
-                <li>Know you need one, but haven't gotten around doing it</li>
-            </ul>
-            </p>
-            <p>
-                We aren't trying to sell you anything, we just need your feedback. We want to build an application that
-                helps you identify the things and people that are most important to you and use that as a foundation for
-                an estate plan.
-            </p>
-            <p>
-                If you are interested, sign up below and someone will get back to you shortly to set up an appointment.
-            </p>
-
-            {%- include hubspot-interview-form.html -%}
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                {%- include hubspot-interview-form.html -%}
+            </div>
         </div>
     </div>
 </div>
