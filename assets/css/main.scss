@@ -38,7 +38,7 @@ $link-decoration: none;
 $link-hover-color: $contrast-shade;
 $link-hover-decoration: underline $complimentary-shade-bright;
 
-@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../assets/bootstrap/scss/bootstrap';
 
 // Overrides
 .btn {
