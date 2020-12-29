@@ -122,10 +122,13 @@ var orderComplete = function(stripe, clientSecret) {
         document.querySelector(".sr-payment-form").classList.add("hidden");
         document.querySelector(".sr-result").classList.remove("hidden");
         // TODO: Display success message instead of JSON after successful testing
-        document.querySelector("pre").textContent = setupIntentJson;
-        setTimeout(function() {
-            document.querySelector(".sr-result").classList.add("expand");
-        }, 200);
+        // document.querySelector("pre").textContent = setupIntentJson;
+        // setTimeout(function() {
+        //     document.querySelector(".sr-result").classList.add("expand");
+        // }, 200);
+
+        $("#presaleModal").modal().hide();
+        $("#successModal").modal().show();
 
         changeLoadingState(false);
     });
