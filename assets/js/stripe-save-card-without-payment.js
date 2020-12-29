@@ -38,11 +38,16 @@ var stripeElements = function(publicKey, setupIntent) {
         changeLoadingState(true);
         var email = document.getElementById("email").value;
 
+        console.log("DEBUG: setupIntent:", setupIntent);
+        console.log("DEBUG: email:", email);
+
         stripe
-            .confirmCardSetup(setupIntent.client_secret, {
+            .confirmCardSetup(setupIntent.createdPresale.client_secret, {
                 payment_method: {
                     card: card,
-                    billing_details: { email: email }
+                    billing_details: {
+                        email: email
+                    }
                 }
             })
             .then(function(result) {
@@ -52,7 +57,7 @@ var stripeElements = function(publicKey, setupIntent) {
                     displayError.textContent = result.error.message;
                 } else {
                     // The PaymentMethod was successfully set up
-                    orderComplete(stripe, setupIntent.client_secret);
+                    orderComplete(stripe, setupIntent.createdPresale.client_secret);
                 }
             });
     });
@@ -109,12 +114,14 @@ var changeLoadingState = function(isLoading) {
 
 /* Shows a success / error message when the payment is complete */
 var orderComplete = function(stripe, clientSecret) {
+    console.log("Stripe setupIntent successful!")
     stripe.retrieveSetupIntent(clientSecret).then(function(result) {
         var setupIntent = result.setupIntent;
         var setupIntentJson = JSON.stringify(setupIntent, null, 2);
 
         document.querySelector(".sr-payment-form").classList.add("hidden");
         document.querySelector(".sr-result").classList.remove("hidden");
+        // TODO: Display success message instead of JSON after successful testing
         document.querySelector("pre").textContent = setupIntentJson;
         setTimeout(function() {
             document.querySelector(".sr-result").classList.add("expand");
