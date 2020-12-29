@@ -59,12 +59,17 @@ var stripeElements = function(publicKey, setupIntent) {
 };
 
 var getSetupIntent = function(publicKey, setupIntentUrl) {
+    // TODO: Remove 'amount' and 'currency' parameters used for testing, replace with pre-sale plan details
     // return fetch("/create-setup-intent", {
     return fetch(setupIntentUrl, {
         method: "post",
         headers: {
             "Content-Type": "application/json"
-        }
+        },
+        body: JSON.stringify({
+            amount: "24",
+            currency: "USD"
+        })
     })
         .then(function(response) {
             return response.json();
@@ -123,5 +128,6 @@ var orderComplete = function(stripe, clientSecret) {
 
 publicKey = "pk_test_51I13ubFsT7oHHUTkkULBRhpwm3W42bEBVZeO6SBCFtAomUKfQWXFiZGwdBLNJZTlbzf3lQ4LUnkZT1i3HW45aXWM00G3CaW0n7"
 // setupIntentUrl = "http://127.0.0.1:3000/"
-setupIntentUrl = "https://pe6pl9xfw0.execute-api.us-east-1.amazonaws.com/prod/charge"  // TODO: Change this, still testing
+// setupIntentUrl = "https://pe6pl9xfw0.execute-api.us-east-1.amazonaws.com/prod/charge"  // TODO: Change this, still testing
+setupIntentUrl = "https://pe6pl9xfw0.execute-api.us-east-1.amazonaws.com/prod/presale"
 getSetupIntent(publicKey, setupIntentUrl)

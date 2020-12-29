@@ -414,46 +414,48 @@ title: Sign-up for early access
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Pre-sale Sign-up</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="sr-payment-form card">
-                    <div class="sr-form-row">
-                        <label>
-                            Account details
-                        </label>
-                        <input type="text" id="email" placeholder="Email address" />
-                    </div>
-
-                    <div class="sr-form-row">
-                        <label>
-                            Payment details
-                        </label>
-                        <div class="sr-input sr-element sr-card-element" id="card-element">
-                            <!-- A Stripe card Element will be inserted here. -->
+            <form>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pre-sale Sign-up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="sr-payment-form card">
+                        <div class="sr-form-row">
+                            <label>
+                                Account details
+                            </label>
+                            <input type="text" id="email" placeholder="Email address" />
                         </div>
+
+                        <div class="sr-form-row">
+                            <label>
+                                Payment details
+                            </label>
+                            <div class="sr-input sr-element sr-card-element" id="card-element">
+                                <!-- A Stripe card Element will be inserted here. -->
+                            </div>
+                        </div>
+                        <div class="sr-field-error" id="card-errors" role="alert"></div>
                     </div>
-                    <div class="sr-field-error" id="card-errors" role="alert"></div>
+                    <div class="sr-result hidden">
+                        <p>Card setup completed<br /></p>
+                        <pre>
+                            <code></code>
+                        </pre>
+                    </div>
                 </div>
-                <div class="sr-result hidden">
-                    <p>Card setup completed<br /></p>
-                    <pre>
-                        <code></code>
-                    </pre>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+    <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <button id="submit" type="button" class="btn btn-primary">
+                        <div class="spinner hidden" id="spinner"></div>
+                        <span id="button-text">Link your card to your account</span>
+                    </button>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-<!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-                <button id="submit" type="button" class="btn btn-primary">
-                    <div class="spinner hidden" id="spinner"></div>
-                    <span id="button-text">Link your card to your account</span>
-                </button>
-            </div>
+            </form>
         </div>
     </div>
 </div>
