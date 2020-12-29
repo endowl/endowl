@@ -4,27 +4,22 @@ title: Estate Planner Early Access Sign-Up
 ---
 <div class="header">
     <div class="container header-container">
-        <div class="col-lg-6 header-img-section">
-            <img src="{{ "/assets/images/Owlfred.svg" | relative_url }}">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 header-img-section">
+                {%- include svg/question.svg -%}
+            </div>
+            <div class="col-lg-5 offset-lg-1 header-title-section">
+                <p class="header-subtitle">Thank you!</p>
+                <h3 class="header-title">One more question before you go....</h3>
+                <h4 class="header-subtitle">
+                    Do you want to be among the first to know when Endowl is ready?
+                </h4>
+            </div>
         </div>
-        <div class="col-lg-5 offset-lg-1 header-title-section">
-            <p class="header-subtitle">Thank you!</p>
-            <h1 class="header-title">One more thing before you go....</h1>
-            <p>
-                To be the first to know when Endowl is ready to use sign-up for our early access list:
-            </p>
-
-            <!--[if lte IE 8]>
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-            <![endif]-->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-                hbspt.forms.create({
-                    portalId: "8619597",
-                    formId: "9cdd3a2b-bbfb-4e4f-a4b8-96e5788a9722"
-                });
-
-            </script>
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                {%- include hubspot-beta-signup-form.html -%}
+            </div>
         </div>
     </div>
 </div>

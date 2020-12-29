@@ -1,10 +1,10 @@
-.beta-signup-form {
+.signup-form {
   margin-top: 5rem;
   padding: 20px;
   background-color: adjust-color($contrast-shade, $alpha: -0.3);
   border-radius: 10px;
   color: $base-shade-dark;
-  .hs_email label {
+  .field label {
     font-size: 0.8rem;
     margin-bottom: 0.1rem;
   }
