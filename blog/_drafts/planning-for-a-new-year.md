@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Planning ahead for a 2021
-subtitle: Have you been meaning to make a will? Resolve to get it done in 2021.
+subtitle: Have you been meaning to make a will? Here's an easy way to get it done.
 ---
 2020 was tough. 2021 doesn’t have to be. It’s hard to follow through with your New Year’s resolution when life starts to catch up with you—there’s not enough time to go to the gym, picking up a new hobby feels less realistic, and it's hard to eat healthy all the time, with so much going on. This time, think a little outside the box when it comes to looking forward to the next twelve months. Get your new year off to a good start by making a resolution you won’t soon want to forget.
 

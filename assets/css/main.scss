@@ -343,6 +343,41 @@ button:focus {
   }
 }
 
+.blog-listing {
+  .card {
+    background-color: $contrast-shade;
+    color: $base-shade-dark;
+    a {
+      color: $base-shade-dark;
+    }
+  }
+}
+
+.blog-post {
+  background-color: $contrast-shade;
+  color: $base-shade-dark;
+  .header {
+    background-color: $base-shade-medium;
+    padding-top: 81px;
+  }
+  .container {
+    padding-top: 5rem;
+    .row {
+      @extend .justify-content-center;
+    }
+    .col {
+      max-width: 800px;
+    }
+  }
+  .signup-form {
+    background-color: $base-shade-dark;
+    color: $contrast-shade;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+}
+
 /* 8. NEWS SECTION */
 .blog-section {
   display: flex;

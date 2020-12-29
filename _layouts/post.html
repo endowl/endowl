@@ -1,33 +1,46 @@
 ---
 layout: default
 ---
-<div class="header"></div>
-<div class="container">
-    <div class="card">
-        <div class="card-body">
-            <h1 class="card-title">{{ page.title | escape }}</h1>
-            <p class="card-subtitle font-weight-bold fs-5">{{ page.subtitle | escape }}</p>
-            {%- if page.image -%}
-            <img src="{{ page.image | relative_url}}">
-            {%- endif -%}
-            <div class="post-meta mb-4 fst-italic">
-                {%- if page.date -%}
-                <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
-                      itemprop="datePublished">
-                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                    {{ page.date | date: date_format }}
-                </time>
+<div class="blog-post">
+    <div class="header">
+    </div>
+    <div class="container">
+        <div class="row row-cols-1">
+            <div class="col">
+                {%- if page.image -%}
+                <img src="{{ page.image | relative_url}}">
                 {%- endif -%}
-                {%- if page.author -%}
-                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <h1 class="header-title">{{ page.title | escape }}</h1>
+                <p class="header-subtitle font-weight-bold fs-3">{{ page.subtitle | escape }}</p>
+                <div class="post-meta mb-4 fst-italic">
+                    {%- if page.date -%}
+                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
+                          itemprop="datePublished">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        {{ page.date | date: date_format }}
+                    </time>
+                    {%- endif -%}
+                    {%- if page.author -%}
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
             </span>
-                {%- endif -%}
+                    {%- endif -%}
+                </div>
             </div>
-            {{ content }}
+        </div>
+        <div class="row row-cols-1">
+            <div class="col">
+                <div class="text">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-5">
+            <div class="col-lg-4">
+                <div class="bottom-cta">
+                    {%- include hubspot-beta-signup-form.html -%}
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="bottom-cta container align-content-center w-25 mb-5">
-    {%- include hubspot-beta-signup-form.html -%}
 </div>
