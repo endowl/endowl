@@ -426,14 +426,16 @@ button:focus {
 
 .blog-post-card-container {
   padding: 20px;
-  height: 510px;
 }
 
 .blog-post-card {
   background-color: $contrast-shade;
   border-radius: 50px;
-  padding: 55px 20px;
+  padding: 55px 20px 20px;
   height: 100%;
+  a {
+    color: $base-shade-dark;
+  }
 }
 
 .blog-post-icon {
@@ -448,7 +450,7 @@ button:focus {
 }
 
 .blog-post-title {
-  font-size: 20px;
+  font-size: 1.3rem;
   color: #303669;
   font-weight: 700;
   line-height: 2;
@@ -456,14 +458,13 @@ button:focus {
 }
 
 .blog-post-subtitle {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #CCCCCC;
   line-height: 1;
   margin-bottom: 10px;
 }
 
 .blog-post-text {
-  font-size: 14px;
   color: #000;
   font-weight: 300;
   line-height: 1.5;
