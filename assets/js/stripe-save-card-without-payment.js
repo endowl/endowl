@@ -127,8 +127,12 @@ var orderComplete = function(stripe, clientSecret) {
         //     document.querySelector(".sr-result").classList.add("expand");
         // }, 200);
 
-        $("#presaleModal").modal().hide();
-        $("#successModal").modal().show();
+        // $("#presaleModal").modal().hide();
+        // $("#successModal").modal().show();
+        var presaleModal = document.getElementById("presaleModal");
+        bootstrap.Modal.getInstance(presaleModal).hide();
+        var successModal = document.getElementById("successModal");
+        new bootstrap.Modal(successModal).show();
 
         changeLoadingState(false);
     });

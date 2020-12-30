@@ -20,6 +20,14 @@ title: Sign-up for early access
         }
     }
 
+    .modal {
+        color: #5725aa;
+    }
+
+    .card {
+        border: none;
+    }
+
     .mobile .plan {
         padding: 10px;
         margin-left: 10px;
@@ -377,10 +385,8 @@ title: Sign-up for early access
         <div class="modal-content">
             <form id="setup-form">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="presaleModalLabel">Pre-sale Sign-up</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title">Pre-sale Sign-up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="sr-payment-form card">
@@ -417,7 +423,7 @@ title: Sign-up for early access
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                     <button id="submit" type="button" class="btn btn-primary">
                         <div class="spinner hidden" id="spinner"></div>
                         <span id="button-text">Link your card to your account</span>
@@ -429,7 +435,7 @@ title: Sign-up for early access
 </div>
 
 <!-- TODO: REMOVE THIS BUTTON: Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#successModal">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successModal">
     Launch success modal
 </button>
 
@@ -438,16 +444,14 @@ title: Sign-up for early access
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Success!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h5 class="modal-title">Success!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 You have successfully signed up to be one of the first to use Endowl. We will let you know as soon everything is ready. You will not be charged until the service is live.
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -464,10 +468,12 @@ title: Sign-up for early access
         <br>
         <i class="fa fa-check"></i>
         Letters of instructions delivered to appropriate parties
-        <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14w5FsT7oHHUTkRm0NKow6" data-toggle="modal" data-target="#presaleModal">
-            <strike>$24/year</strike><br>
-            $19.20/year
-        </button>
+        <div class="d-grid">
+            <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14w5FsT7oHHUTkRm0NKow6" data-bs-toggle="modal" data-bs-target="#presaleModal">
+                <strike>$24/year</strike><br>
+                $19.20/year
+            </button>
+        </div>
     </div>
     <div class="plan">
         <div class="text-center">
@@ -479,10 +485,12 @@ title: Sign-up for early access
         <br>
         <i class="fa fa-check"></i>
         Automatic digital asset ownership transfer
-        <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14xyFsT7oHHUTky7QvSdjY" data-toggle="modal" data-target="#presaleModal">
-            <strike>$99/year</strike><br>
-            $79.20/year
-        </button>
+        <div class="d-grid">
+            <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14xyFsT7oHHUTky7QvSdjY" data-bs-toggle="modal" data-bs-target="#presaleModal">
+                <strike>$99/year</strike><br>
+                $79.20/year
+            </button>
+        </div>
     </div>
     <div class="plan">
         <div class="text-center">
@@ -494,10 +502,12 @@ title: Sign-up for early access
         <br>
         <i class="fa fa-check"></i>
         Professional estate planner consultations
-        <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I15jUFsT7oHHUTk7l7oLMep" data-toggle="modal" data-target="#presaleModal">
-            <strike>$249/year</strike><br>
-            $199.20/year
-        </button>
+        <div class="d-grid">
+            <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I15jUFsT7oHHUTk7l7oLMep" data-bs-toggle="modal" data-bs-target="#presaleModal">
+                <strike>$249/year</strike><br>
+                $199.20/year
+            </button>
+        </div>
     </div>
 </div>
 
@@ -508,21 +518,21 @@ title: Sign-up for early access
                 <th class="feature-name"></th>
                 <th class="plan">
                     <h3>basic</h3>
-                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14w5FsT7oHHUTkRm0NKow6" data-toggle="modal" data-target="#presaleModal">
+                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14w5FsT7oHHUTkRm0NKow6" data-bs-toggle="modal" data-bs-target="#presaleModal">
                         <strike>$24/year</strike><br>
                         $19.20/year
                     </button>
                 </th>
                 <th class="plan">
                     <h3>standard</h3>
-                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14xyFsT7oHHUTky7QvSdjY" data-toggle="modal" data-target="#presaleModal">
+                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14xyFsT7oHHUTky7QvSdjY" data-bs-toggle="modal" data-bs-target="#presaleModal">
                         <strike>$99/year</strike><br>
                         $79.20/year
                     </button>
                 </th>
                 <th class="plan">
                     <h3>elite</h3>
-                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I15jUFsT7oHHUTk7l7oLMep" data-toggle="modal" data-target="#presaleModal">
+                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I15jUFsT7oHHUTk7l7oLMep" data-bs-toggle="modal" data-bs-target="#presaleModal">
                         <strike>$249/year</strike><br>
                         $199.20/year
                     </button>
