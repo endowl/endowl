@@ -2,7 +2,7 @@
 layout: post
 title: Planning ahead for 2021
 subtitle: Have you been meaning to make a will? Here's an easy way to get it done.
-image: ../../assets/blog-header-photos/tim-mossholder-3YG2aoPU1IM-unsplash.jpg
+image: ../../assets/stock-photos/tim-mossholder-3YG2aoPU1IM-unsplash.jpg
 photoCreditText: Tim Mossholder
 photoCreditUrl: https://unsplash.com/@timmossholder
 
