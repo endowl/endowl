@@ -2,6 +2,7 @@
 layout: post
 title: Example Draft Post
 subtitle: Not published online
+image: /assets/images/Alfredbw.png
 ---
 
 A draft post such as this allows saving work in progress without making that work public.

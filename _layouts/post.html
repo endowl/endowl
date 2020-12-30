@@ -1,35 +1,46 @@
 ---
 layout: default
 ---
-
-<div class="header">
-    <div class="container header-container">
-        <h1 class="header-title">{{ page.title | escape }}</h1>
+<div class="blog-post">
+    <div class="header">
     </div>
-</div>
-<div class="container header-container">
-    <p class="header-subtitle">{{ page.subtitle | escape }}</p>
-</div>
-<div class="container header-container">
-    <p class="post-meta">
-        {%- if page.date -%}
-        • <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-    </time>
-        {%- endif -%}
-        {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-        {%- endif -%}</p>
-</div>
-
-<div class="container">
-    {{ content }}
-</div>
-<br>
-
-<div class="content">
-    <div class="col-sm-4 offset-sm-4 header-title-section">
-        {%- include hubspot-form.html -%}
+    <div class="container">
+        <div class="row row-cols-1">
+            <div class="col">
+                {%- if page.image -%}
+                <img src="{{ page.image | relative_url}}">
+                {%- endif -%}
+                <h1 class="header-title">{{ page.title | escape }}</h1>
+                <p class="header-subtitle font-weight-bold fs-3">{{ page.subtitle | escape }}</p>
+                <div class="post-meta mb-4 fst-italic">
+                    {%- if page.date -%}
+                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
+                          itemprop="datePublished">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        {{ page.date | date: date_format }}
+                    </time>
+                    {%- endif -%}
+                    {%- if page.author -%}
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+            </span>
+                    {%- endif -%}
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1">
+            <div class="col">
+                <div class="text">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-5">
+            <div class="col-lg-4">
+                <div class="bottom-cta">
+                    {%- include hubspot-beta-signup-form.html -%}
+                </div>
+            </div>
+        </div>
     </div>
 </div>

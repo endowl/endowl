@@ -1,47 +1,71 @@
-
 <div class="footer-section">
-  <div class="footer-section-bg-graphics">
-    <img src="{{ "/assets/images/footer-section-bg.png" | relative_url }}">
-  </div>
+    <div class="footer-section-bg-graphics">
+        <img src="{{ "/assets/images/footer-section-bg.png" | relative_url }}">
+    </div>
 
-  <div class="container footer-container">
-    <div class="col-lg-3 col-md-6 footer-logo">
-      <h3 class="footer-subsection-title">Endowl</h3>
-      <p class="footer-susection-text">Plan Your Legacy</p>
-      <a href="{{ "/estate-planning-glossary" | relative_url }}">Glossary</a><br>
-    </div>
-    <div class="col-lg-3 col-md-6 footer-subsection">
-      <div class="footer-subsection-2-1">
-        <h3 class="footer-subsection-title">Links</h3>
-        <a href="{{ "/index.html#top" | relative_url }}">Home</a><br>
-        <a href="{{ "/index.html#inheritance" | relative_url }}">About</a><br>
-        <a href="{{ "/index.html#team" | relative_url }}">Team</a><br>
-        <a href="{{ "/blog/" | relative_url }}">Blog</a>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 footer-subsection">
-      <h3 class="footer-subsection-title">Contact Us</h3>
-      <ul class="footer-subsection-list">
-<!--        <a href="mailto:info@endowl.com"><li>info@endowl.com</li></a>-->
-        <li><a href="{{ "/index.html#top" | relative_url }}">Sign up for updates</a></li>
-      </ul>
-    </div>
-    <div class="col-lg-3 col-md-6 footer-subsection">
-      <div class="footer-subsection-2-2">
-        <h3 class="footer-subsection-title">Social</h3>
-        <div class="footer-social-media-icons-section">
-          <a href="https://twitter.com/Endowl_Inc" target="_blank" class="footer-social-media-icon"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.facebook.com/EndowlInc/" target="_blank" class="footer-social-media-icon"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.linkedin.com/company/endowl" target="_blank" class="footer-social-media-icon"><i class="fa fa-linkedin"></i></a>
+    <div class="container footer-container">
+        <div class="col-lg-3 col-md-6 footer-logo">
+            <div>
+                {%- include svg/logo.svg -%}
+            </div>
+            <a href="{{ "/estate-planning-glossary" | relative_url }}">Glossary</a><br>
         </div>
-      </div>
+        <div class="col-lg-3 col-md-6 footer-subsection">
+            <div class="footer-subsection-2-1">
+                <h3 class="footer-subsection-title">Links</h3>
+                <a href="{{ "/index.html#top" | relative_url }}">Home</a><br>
+                <a href="{{ "/index.html#inheritance" | relative_url }}">About</a><br>
+                <a href="{{ "/index.html#team" | relative_url }}">Team</a><br>
+                <a href="{{ "/blog/" | relative_url }}">Blog</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-subsection">
+            <h3 class="footer-subsection-title">Contact Us</h3>
+            <ul class="footer-subsection-list">
+                <li><a href="mailto:info@endowl.com">info@endowl.com</a></li>
+                <li><a href="{{ "/index.html#top" | relative_url }}">Sign up for updates</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-subsection">
+            <div class="footer-subsection-2-2">
+                <h3 class="footer-subsection-title">Social</h3>
+                <div class="footer-social-media-icons-section">
+                    <a href="https://twitter.com/EndowlApp" target="_blank" class="footer-social-media-icon"><i
+                            class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/EndowlApp/" target="_blank" class="footer-social-media-icon"><i
+                            class="fa fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCu_FwgBtP05Zfe7xix4C7zQ" target="_blank"
+                       class="footer-social-media-icon"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="footer-social-media-icons-section">
+                    <a href="https://www.linkedin.com/company/endowl" target="_blank"
+                       class="footer-social-media-icon"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.reddit.com/r/endowl/" target="_blank"
+                       class="footer-social-media-icon"><i class="fa fa-reddit"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="container footer-credits">
-    <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p><br />
-    <p>© 2020 <a href="{{ "/index.html#top" | relative_url }}" title="Endowl, Inc">Endowl,™ Inc</a>. All Rights Reserved.</p>
-  </div>
+    <div class="container footer-credits">
+        <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p><br/>
+        <p>© 2020 <a href="{{ "/index.html#top" | relative_url }}" title="Endowl, Inc">Endowl</a>™, Inc. All Rights
+            Reserved.</p>
+        <p class="photo-credit">
+            Photo by <a
+                href="https://unsplash.com/@limorganon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                target="_blank"
+        >
+            Limor Zellermayer
+        </a> on <a
+                href="https://unsplash.com/s/photos/family?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                target="_blank"
+        >
+            Unsplash
+        </a>
+        </p>
+
+    </div>
 </div>
 
 <!-- FOOTER SCRIPTS -->
@@ -49,19 +73,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <!-- Header scroll -->
-<script type="text/javascript">
-  $().ready(function() {
-    if ($(this).scrollTop() > 20) {
-      $('#navbar').addClass('header-scrolled');
-    }
-  })
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 20) {
-      $('#navbar').addClass('header-scrolled');
-    } else {
-      $('#navbar').removeClass('header-scrolled');
-    }
-  });
-</script>
+<script type="text/javascript" src="/assets/js/scrollAction.js"></script>
 
 {%- include hubspot-tracking.html -%}

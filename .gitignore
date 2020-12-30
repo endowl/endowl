@@ -2,6 +2,7 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-vendor
+/vendor
 .idea
 **/.DS_Store
+node_modules
