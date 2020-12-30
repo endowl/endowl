@@ -372,6 +372,12 @@ button:focus {
   .text {
     font-size: 1.2rem;
   }
+  .photo-credit {
+    font-size: .8rem;
+    a {
+      color: $base-shade-dark;
+    }
+  }
 }
 
 /* 8. NEWS SECTION */
