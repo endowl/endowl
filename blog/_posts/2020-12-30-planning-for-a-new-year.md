@@ -34,6 +34,8 @@ Endowl is building an app that makes it easy to do all of that. It asks you abou
 #### Resolve to Make a Plan
 The Endowl app isn’t quite ready yet, but it will be soon. For a limited time, we are offering a pre-sale where you can sign up for Endowl now and get a special price. If setting up a will is on your to-do list for 2021, this is a great opportunity to put your plan in action today. You will get early access to the Endowl app and will be among the first to experience the Endowl estate planning process.
 
+To get an invitation to the pre-sale, **submit your email address using the form at the bottom of this page**. We will send you an email with instructions for how to sign up for the pre-sale.
+
 After you’ve done that, you will have taken the first step toward following through on your New Years’ resolution.
 
 When the app is ready (in the next 2 or 3 months), we will let you know so that you can continue building toward your goal of having the estate plan that is right for you and your loved ones. We promise to help you create an excellent plan in an easy, frictionless way to make sure that the people and things that you care most about are taken care of after you’ve passed on.
