@@ -5,7 +5,6 @@ subtitle: Have you been meaning to make a will? Here's an easy way to get it don
 image: ../../assets/stock-photos/tim-mossholder-3YG2aoPU1IM-unsplash.jpg
 photoCreditText: Tim Mossholder
 photoCreditUrl: https://unsplash.com/@timmossholder
-
 ---
 It's that time of year when we tend to look ahead and ask, "how can I make next year better?" 2020 was tough, and there are dozens of reasons to hope for a better 2021. Slowly but surely, The world will start to return to the normal we knew before the pandemic.
 

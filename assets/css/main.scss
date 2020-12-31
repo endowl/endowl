@@ -582,5 +582,12 @@ button:focus {
   }
 }
 
+.share-button {
+  padding: 0 10px;
+  .fb-share-button > span {
+    height: 28px !important;
+  }
+}
+
 @import "signup-form";
 @import "footer";
