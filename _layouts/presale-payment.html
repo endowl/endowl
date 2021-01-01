@@ -1,0 +1,61 @@
+---
+layout: default
+title: Sign-up for early access
+---
+
+<form id="setup-form">
+    <div class="modal-header">
+        <h5 class="modal-title">Pre-sale Sign-up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <div class="sr-payment-form card">
+            <div class="sr-form-row">
+                <label>
+                    Account details
+                </label>
+                <input type="text" id="email" placeholder="Email address" />
+            </div>
+
+            <div class="sr-form-row">
+                <label>
+                    Payment details
+                </label>
+                <div class="sr-input sr-element sr-card-element" id="card-element">
+                    <!-- A Stripe card Element will be inserted here. -->
+                </div>
+            </div>
+            <div class="sr-field-error" id="card-errors" role="alert"></div>
+
+            <div class="sr-form-row">
+                <p>
+                    <small>
+                        I authorise Endowl to send instructions to the financial institution that issued my card to take payments from my card account in accordance with the terms of my agreement with you.
+                    </small>
+                </p>
+            </div>
+        </div>
+        <div class="sr-result hidden">
+            <p>Card setup completed<br /></p>
+            <pre>
+                            <code></code>
+                        </pre>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button id="submit" type="button" class="btn btn-primary">
+            <div class="spinner hidden" id="spinner"></div>
+            <span id="button-text">Link your card to your account</span>
+        </button>
+    </div>
+</form>
+
+<p class="footnote">
+    <small>* The Endowl service and application are under active development. By signing up now you will secure your place among the first users. Your credit card will not be charged until the service becomes live.  In the unlikely event that the service and application do not get completed you will not be charged.</small>
+</p>
+
+<!-- Load Stripe library and apply event listeners to checkout buttons -->
+<script src="https://js.stripe.com/v3"></script>
+<!--<script src="assets/js/stripe-checkout-buttons.js"></script>-->
+<script src="assets/js/stripe-save-card-without-payment.js"></script>
