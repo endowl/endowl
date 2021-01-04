@@ -114,7 +114,7 @@ nav p {
 $background-gradient-bottom: adjust-color($base-shade-dark, $alpha: -0.1);
 $background-gradient-top: adjust-color($base-shade-medium, $alpha: -0.1);
 #hero-image {
-  background: linear-gradient($background-gradient-top, $background-gradient-bottom), url(../images/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
+  background: linear-gradient($background-gradient-top, $background-gradient-bottom), url(../stock-photos/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -372,6 +372,12 @@ button:focus {
   .text {
     font-size: 1.2rem;
   }
+  .photo-credit {
+    font-size: .8rem;
+    a {
+      color: $base-shade-dark;
+    }
+  }
 }
 
 /* 8. NEWS SECTION */
@@ -426,14 +432,16 @@ button:focus {
 
 .blog-post-card-container {
   padding: 20px;
-  height: 510px;
 }
 
 .blog-post-card {
   background-color: $contrast-shade;
   border-radius: 50px;
-  padding: 55px 20px;
+  padding: 55px 20px 20px;
   height: 100%;
+  a {
+    color: $base-shade-dark;
+  }
 }
 
 .blog-post-icon {
@@ -448,7 +456,7 @@ button:focus {
 }
 
 .blog-post-title {
-  font-size: 20px;
+  font-size: 1.3rem;
   color: #303669;
   font-weight: 700;
   line-height: 2;
@@ -456,14 +464,13 @@ button:focus {
 }
 
 .blog-post-subtitle {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #CCCCCC;
   line-height: 1;
   margin-bottom: 10px;
 }
 
 .blog-post-text {
-  font-size: 14px;
   color: #000;
   font-weight: 300;
   line-height: 1.5;
@@ -572,6 +579,13 @@ button:focus {
   .nav-tabs .nav-link.active {
     background-color: white;
     border-color: white;
+  }
+}
+
+.share-button {
+  padding: 0 10px;
+  .fb-share-button > span {
+    height: 28px !important;
   }
 }
 

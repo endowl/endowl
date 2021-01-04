@@ -2,6 +2,9 @@
 layout: post
 title: The Estate Planning Checklist
 subtitle: The steps you need to complete your estate plan
+image: ../../assets/stock-photos/anete-lusina-2JknzBYDu6k-unsplash.jpg
+photoCreditText: Anete Lūsiņa
+photoCreditUrl: https://unsplash.com/@anete_lusina
 ---
 
 If the idea of estate planning sounds overwhelming, know that you’re not alone - over half of American adults lack any form of a will or estate plan.
