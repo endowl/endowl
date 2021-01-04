@@ -147,7 +147,8 @@ const plan_coupon = document.getElementById("plan_coupon").value;
 const plan_referral = document.getElementById("plan_referral").value;
 const metadata = { plan_id: plan_id, plan_coupon: plan_coupon, plan_referral: plan_referral };
 
-publicKey = "pk_test_51HvuI1GWadBFKXSLciAMeatoirfWpXeu75poNl2gMuIHevw3TaOUD4lRfQssEx4dnPXNodsKcLjHAkXPYflN79Su00y1MjsN8b"
+// publicKey = "pk_test_51HvuI1GWadBFKXSLciAMeatoirfWpXeu75poNl2gMuIHevw3TaOUD4lRfQssEx4dnPXNodsKcLjHAkXPYflN79Su00y1MjsN8b"
+publicKey = "pk_live_51HvuI1GWadBFKXSLwYtUZE2foY7cRxLDuHVlXbfmsYCS5IAiN2g3zc26yyOHfA6UeDAsJytOyCFd1iW1hwdK3KGw00nMQnVMJ0"
 // setupIntentUrl = "http://127.0.0.1:3000/"
 setupIntentUrl = "https://8vb8o3qehk.execute-api.us-east-1.amazonaws.com/prod/presale"
 getSetupIntent(publicKey, setupIntentUrl, metadata);
