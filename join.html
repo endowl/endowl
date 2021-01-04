@@ -20,6 +20,17 @@ title: Sign-up for early access
         }
     }
 
+    .btn-primary {
+        background-color: #00FF85;
+        color: #662cc8;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+        background-color: #00ffc0;
+        color: #662cc8;
+    }
+
     .modal {
         color: #5725aa;
     }
@@ -56,40 +67,11 @@ title: Sign-up for early access
 
     .plan .btn strike,
     .feature-table strike {
-        color: lightgray;
+        color: #313662;
     }
 </style>
 
 <style>
-    /* Variables */
-    /*
-    :root {
-        --body-color: rgb(247, 250, 252);
-        --button-color: rgb(30, 166, 114);
-        --accent-color: #0a721b;
-        --secondary-color: #ed5f74;
-        --link-color: #ffffff;
-        --font-color: rgb(105, 115, 134);
-        --gray-border: rgba(0, 0, 0, 0.15);
-        --gray-light: rgba(0, 0, 0, 0.4);
-        --body-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        --radius: 6px;
-        --form-width: 400px;
-    }
-    */
-
-    /* Base */
-    /*
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        font-family: var(--body-font-family);
-        font-size: 16px;
-        -webkit-font-smoothing: antialiased;
-    }
-    */
-
     /* Layout */
     .sr-picker {
         display: flex;
@@ -191,58 +173,6 @@ title: Sign-up for early access
         display: inline-block;
     }
 
-    /* Buttons and links */
-    /*
-    button {
-        background: var(--accent-color);
-        border-radius: var(--radius);
-        color: white;
-        border: 0;
-        padding: 12px 16px;
-        margin-top: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        display: block;
-        box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
-        width: 100%;
-    }
-    button:hover {
-        filter: contrast(115%);
-    }
-    button:active {
-        transform: translateY(0px) scale(0.98);
-        filter: brightness(0.9);
-    }
-    button:disabled {
-        opacity: 0.5;
-        cursor: none;
-    }
-
-    a {
-        color: var(--link-color);
-        text-decoration: none;
-        transition: all 0.2s ease;
-    }
-
-    a:hover {
-        filter: brightness(0.8);
-    }
-
-    a:active {
-        filter: brightness(0.5);
-    }
-    */
-
-    /* Code block */
-    /*
-    code,
-    pre {
-        font-family: "SF Mono", "IBM Plex Mono", "Menlo", monospace;
-        font-size: 12px;
-    }
-    */
-
     /* Stripe Element placeholder */
     .sr-card-element {
         padding-top: 12px;
@@ -265,7 +195,7 @@ title: Sign-up for early access
 
     }
 
-    /* todo: spinner/processing state, errors, animations */
+    /* spinner/processing state, errors, animations */
 
     .spinner,
     .spinner:before,
@@ -434,11 +364,6 @@ title: Sign-up for early access
     </div>
 </div>
 
-<!-- TODO: REMOVE THIS BUTTON: Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successModal">
-    Launch success modal
-</button>
-
 <!-- Success Modal -->
 <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -468,12 +393,14 @@ title: Sign-up for early access
         <br>
         <i class="fa fa-check"></i>
         Letters of instructions delivered to appropriate parties
-        <div class="d-grid">
-            <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14w5FsT7oHHUTkRm0NKow6" data-bs-toggle="modal" data-bs-target="#presaleModal">
-                <strike>$24/year</strike><br>
-                $19.20/year
-            </button>
-        </div>
+        <a href="{{ '/presale/basic' | relative_url }}">
+            <div class="d-grid">
+                <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14w5FsT7oHHUTkRm0NKow6" DISABLED-data-bs-toggle="modal" DISABLED-data-bs-target="#presaleModal">
+                    <strike>$24/year</strike><br>
+                    $19.20/year
+                </button>
+            </div>
+        </a>
     </div>
     <div class="plan">
         <div class="text-center">
@@ -485,12 +412,14 @@ title: Sign-up for early access
         <br>
         <i class="fa fa-check"></i>
         Automatic digital asset ownership transfer
-        <div class="d-grid">
-            <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14xyFsT7oHHUTky7QvSdjY" data-bs-toggle="modal" data-bs-target="#presaleModal">
-                <strike>$99/year</strike><br>
-                $79.20/year
-            </button>
-        </div>
+        <a href="{{ '/presale/standard' | relative_url }}">
+            <div class="d-grid">
+                <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14xyFsT7oHHUTky7QvSdjY" DISABLED-data-bs-toggle="modal" DISABLED-data-bs-target="#presaleModal">
+                    <strike>$99/year</strike><br>
+                    $79.20/year
+                </button>
+            </div>
+        </a>
     </div>
     <div class="plan">
         <div class="text-center">
@@ -502,12 +431,14 @@ title: Sign-up for early access
         <br>
         <i class="fa fa-check"></i>
         Professional estate planner consultations
-        <div class="d-grid">
-            <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I15jUFsT7oHHUTk7l7oLMep" data-bs-toggle="modal" data-bs-target="#presaleModal">
-                <strike>$249/year</strike><br>
-                $199.20/year
-            </button>
-        </div>
+        <a href="{{ '/presale/elite' | relative_url }}">
+            <div class="d-grid">
+                <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I15jUFsT7oHHUTk7l7oLMep" DISABLED-data-bs-toggle="modal" DISABLED-data-bs-target="#presaleModal">
+                    <strike>$249/year</strike><br>
+                    $199.20/year
+                </button>
+            </div>
+        </a>
     </div>
 </div>
 
@@ -518,24 +449,30 @@ title: Sign-up for early access
                 <th class="feature-name"></th>
                 <th class="plan">
                     <h3>basic</h3>
-                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14w5FsT7oHHUTkRm0NKow6" data-bs-toggle="modal" data-bs-target="#presaleModal">
-                        <strike>$24/year</strike><br>
-                        $19.20/year
-                    </button>
+                    <a href="{{ '/presale/basic' | relative_url }}">
+                        <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14w5FsT7oHHUTkRm0NKow6" DISABLED-data-bs-toggle="modal" DISABLED-data-bs-target="#presaleModal">
+                            <strike>$24/year</strike><br>
+                            $19.20/year
+                        </button>
+                    </a>
                 </th>
                 <th class="plan">
                     <h3>standard</h3>
-                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14xyFsT7oHHUTky7QvSdjY" data-bs-toggle="modal" data-bs-target="#presaleModal">
-                        <strike>$99/year</strike><br>
-                        $79.20/year
-                    </button>
+                    <a href="{{ '/presale/standard' | relative_url }}">
+                        <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I14xyFsT7oHHUTky7QvSdjY" DISABLED-data-bs-toggle="modal" DISABLED-data-bs-target="#presaleModal">
+                            <strike>$99/year</strike><br>
+                            $79.20/year
+                        </button>
+                    </a>
                 </th>
                 <th class="plan">
                     <h3>elite</h3>
-                    <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I15jUFsT7oHHUTk7l7oLMep" data-bs-toggle="modal" data-bs-target="#presaleModal">
-                        <strike>$249/year</strike><br>
-                        $199.20/year
-                    </button>
+                    <a href="{{ '/presale/elite' | relative_url }}">
+                        <button class="stripe-checkout-button btn btn-primary btn-block" stripe-price-id="price_1I15jUFsT7oHHUTk7l7oLMep" DISABLED-data-bs-toggle="modal" DISABLED-data-bs-target="#presaleModal">
+                            <strike>$249/year</strike><br>
+                            $199.20/year
+                        </button>
+                    </a>
                 </th>
             </tr>
         </thead>
@@ -623,5 +560,5 @@ title: Sign-up for early access
 <!-- Load Stripe library and apply event listeners to checkout buttons -->
 <script src="https://js.stripe.com/v3"></script>
 <!--<script src="assets/js/stripe-checkout-buttons.js"></script>-->
-<script src="assets/js/stripe-save-card-without-payment.js"></script>
+<!--<script src="assets/js/stripe-save-card-without-payment.js"></script>-->
 
