@@ -63,7 +63,7 @@ var stripeElements = function(publicKey, setupIntent) {
     });
 };
 
-var getSetupIntent = function(publicKey, setupIntentUrl) {
+var getSetupIntent = function(publicKey, setupIntentUrl, metadata) {
     // TODO: Dynamically change pre-sale 'plan' property based on selected plan
     // return fetch("/create-setup-intent", {
     return fetch(setupIntentUrl, {
@@ -71,11 +71,12 @@ var getSetupIntent = function(publicKey, setupIntentUrl) {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-            // amount: "24",
-            // currency: "USD",
-            plan: "presale-test-plan",
-        })
+        body: JSON.stringify(metadata),
+        // body: JSON.stringify({
+        //     // amount: "24",
+        //     // currency: "USD",
+        //     plan: "presale-test-plan",
+        // })
     })
         .then(function(response) {
             return response.json();
@@ -141,7 +142,12 @@ var orderComplete = function(stripe, clientSecret) {
 
 // getPublicKey();
 
+const plan_id = document.getElementById("plan_id").value;
+const plan_coupon = document.getElementById("plan_coupon").value;
+const plan_referral = document.getElementById("plan_referral").value;
+const metadata = { plan_id: plan_id, plan_coupon: plan_coupon, plan_referral: plan_referral };
+
 publicKey = "pk_test_51HvuI1GWadBFKXSLciAMeatoirfWpXeu75poNl2gMuIHevw3TaOUD4lRfQssEx4dnPXNodsKcLjHAkXPYflN79Su00y1MjsN8b"
 // setupIntentUrl = "http://127.0.0.1:3000/"
 setupIntentUrl = "https://8vb8o3qehk.execute-api.us-east-1.amazonaws.com/prod/presale"
-getSetupIntent(publicKey, setupIntentUrl);
+getSetupIntent(publicKey, setupIntentUrl, metadata);
