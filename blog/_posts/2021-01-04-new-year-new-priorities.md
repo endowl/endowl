@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New Year, New Priorities
-subtitle: Planning for your family's finanical security is a great way to start the new year.
+subtitle: Planning for your family's financial security is a great way to start the new year.
 image: ../../assets/stock-photos/erwan-hesry-WPTHZkA-M4I-unsplash.jpg
 photoCreditText: Erwan Hesry
 photoCreditUrl: https://unsplash.com/@erwanhesry
