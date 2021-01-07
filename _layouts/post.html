@@ -11,7 +11,6 @@ layout: default
                 <img src="{{ page.image | relative_url}}" class="w-100 mb-5">
                 {%- endif -%}
                 <h1 class="header-title">{{ page.title | escape }}</h1>
-                <p class="header-subtitle font-weight-bold fs-3">{{ page.subtitle | escape }}</p>
                 <div class="post-meta mb-4 fst-italic">
                     {%- if page.date -%}
                     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
@@ -25,6 +24,7 @@ layout: default
                 <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
             </span>
                     {%- endif -%}
+                    <p class="header-subtitle font-weight-bold fs-3">{{ page.subtitle | escape }}</p>
                 </div>
             </div>
         </div>

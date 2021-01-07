@@ -19,12 +19,11 @@ permalink: /blog/
                                 {{ post.title | escape }}
                             </a>
                         </h3>
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        <p class="fst-italic small">{{ post.date | date: date_format }}</p>
                         {%- if post.subtitle -%}
                         <p class="card-subtitle font-weight-bold">{{ post.subtitle | escape}}</p>
                         {%- endif -%}
-                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                        <p class="fst-italic small">{{ post.date | date: date_format }}</p>
-                        {{ post.excerpt }}
                         <div><a href="{{ post.url | relative_url }}">continue reading...</a></div>
                     </div>
                 </div>

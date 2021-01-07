@@ -2,14 +2,20 @@
 layout: default
 ---
 
+{%- if page.title -%}
 <div class="header">
   <div class="container header-container">
     <h1 class="header-title">{{ page.title | escape }}</h1>
   </div>
 </div>
+{%- endif -%}
+
 <div class="container">
   {{ content }}
 </div>
+
+{%- unless page.hide-form -%}
 <div class="bottom-cta container align-content-center w-25 mb-5">
   {%- include hubspot-beta-signup-form.html -%}
 </div>
+{%- endunless -%}
