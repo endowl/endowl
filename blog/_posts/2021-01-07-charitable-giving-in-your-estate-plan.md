@@ -25,6 +25,6 @@ Simply leaving a statement in your will or trust indicating the amount you’d l
 When you put a bequest in your retirement account, you will eliminate the need for the charity to pay income taxes on the donation, allowing the funds to go further. It will also help lessen the burden of estate taxes on your family. This method is easy to both manage and execute, making the process less stressful on you now, and less stressful on your family later. 
 
 ## Getting the Most Out of Your Plan
-As you can see, there’s a lot you can do to optimize the advantages you create for yourself when you make an estate plan, and charitable giving is just one of them. When you choose to donate to a charity organization, you’re helping out others in the best way possible, and lessing the financial burden for your family all at the same time.
+As you can see, there’s a lot you can do to optimize the advantages you create for yourself when you make an estate plan, and charitable giving is just one of them. When you choose to donate to a charity organization, you’re helping out others in the best way possible, and lessening the financial burden for your family all at the same time.
 
 As you continue on your legacy planning journey, you’ll only continue to discover more and more  ways to protect yourself and your loved ones in the future. 
