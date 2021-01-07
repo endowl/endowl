@@ -83,6 +83,12 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
+  &.white-theme {
+    background-color: $contrast-shade;
+    .navbar {
+      background-color: $body-bg;
+    }
+  }
 }
 
 h1,
@@ -273,6 +279,14 @@ button:focus {
   font-weight: 800;
   font-size: 60px;
   line-height: 1;
+}
+
+.no-header {
+  margin-top: 112px;
+}
+
+.main-contents {
+  min-height: 1000px;
 }
 
 .content {
