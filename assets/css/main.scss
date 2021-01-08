@@ -592,8 +592,6 @@ button:focus {
 #about-section {
   position: relative;
   top: -($nav-link-padding-y + $line-height-base);
-  height: 100%;
-  min-height: 800px;
   &.scrolled {
     top: 3rem;
     margin-bottom: 5rem;
@@ -605,10 +603,38 @@ button:focus {
     height: 100%;
     min-height: 800px;
   }
-  .nav-tabs .nav-link.active {
-    background-color: white;
-    border-color: white;
+  .nav-tabs {
+    justify-content: center;
+    z-index: 5;
+    .nav-item {
+      margin-left: 5px;
+      margin-right: 0;
+      .nav-link {
+        border-color: lightgrey;
+        &.active {
+          background-color: white;
+          border-color: white;
+        }
+      }
+    }
   }
+  .services-container {
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    .anchor {
+      position: absolute;
+      top: -100px;
+    }
+  }
+}
+
+#about-section-nav-tabs.inAboutSection {
+  background-color: $base-shade-bold;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  right: 0;
 }
 
 .share-button {
@@ -616,6 +642,11 @@ button:focus {
   .fb-share-button > span {
     height: 28px !important;
   }
+}
+
+.services-container {
+  height: 100vh;
+  min-height: 100vh;
 }
 
 @import "signup-form";
