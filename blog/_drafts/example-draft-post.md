@@ -2,7 +2,9 @@
 layout: post
 title: Example Draft Post
 subtitle: Not published online
-image: /assets/images/Alfredbw.png
+image: ../assets/images/Alfredbw.png
+photoCreditText: Some random clipart library
+photoCreditUrl: https://endowl.com
 ---
 
 A draft post such as this allows saving work in progress without making that work public.
