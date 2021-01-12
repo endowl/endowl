@@ -121,12 +121,14 @@ nav p {
 $background-gradient-bottom: adjust-color($base-shade-dark, $alpha: -0.1);
 $background-gradient-top: adjust-color($base-shade-medium, $alpha: -0.1);
 #hero-image {
+  /*
   background: linear-gradient($background-gradient-top, $background-gradient-bottom), url(../stock-photos/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   height: 100%;
+ */
   //min-height: 800px;
   &.scrolled {
     //background: none;
@@ -705,11 +707,20 @@ button:focus {
   padding: 0 65px;
 }
 
+#above-the-fold {
+  background: linear-gradient($background-gradient-top, $background-gradient-bottom),url(../stock-photos/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*
 #above-the-fold .fp-bg {
   background: linear-gradient($background-gradient-top, $background-gradient-bottom), url(../stock-photos/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center 80%;
 }
+*/
 
 /*
 .fp-controlArrow {
