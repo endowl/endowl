@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+{%- include head.html -%}
+<body class="{{page.theme | escape | default: "endowl-theme"}}">
+{%- include header.html -%}
+
+<div id="top"></div>
+<div id="fullpage">
+    {{ content }}
+
+    <div class="section fp-auto-height">
+        {%- include footer.html -%}
+    </div>
+</div>
+
+<script>
+    new fullpage('#fullpage', {
+        //options here
+        autoScrolling:true,
+        scrollHorizontally: true,
+        scrollBar: true,
+        fixedElements: '#navbar',
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        scrollingSpeed: 350,
+        controlArrows: true,
+        fitToSection: true,
+        menu: '#navbar',
+        responsiveWidth: 576,
+        responsiveHeight: 400,
+        responsiveSlides: true,
+        // normalScrollElements: ".footer-section",
+        // scrollOverflow: false,
+        // anchors:['top, about, team, footer'],
+        // navigation: true,
+        // navigationPosition: 'right',
+    });
+
+    //methods
+    // fullpage_api.setAllowScrolling(false);
+</script>
+
+</body>
+</html>
