@@ -162,7 +162,7 @@ button:focus {
     background-color: $base-shade-bold !important;
     -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
     box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
-    height: 120px;
+    //height: 120px;
     .tagline {
       opacity: 1;
     }
@@ -232,19 +232,21 @@ button:focus {
   background-image: url("../images/menu.png");
 }
 
-@media screen and (max-width: 991.98px) {
+//@media screen and (max-width: 991.98px) {
+@media screen {
   .navbar {
     -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
     box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
   }
 
   .navbar-brand img {
-    width: 100px !important;
+    //width: 100px !important;
+    width: 129px !important;
     padding: 10px 0;
   }
 
   .scrolled {
-    height: inherit;
+    //height: inherit;
   }
 }
 
@@ -256,6 +258,18 @@ button:focus {
 
   .menu-navbar-nav {
     padding-bottom: 10px;
+  }
+
+  .navbar-brand img {
+    width: 100px !important;
+    //width: 129px !important;
+  }
+
+  .navbar-brand .tagline {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    margin-left: 15px;
+    margin-top:  3px;
   }
 }
 
