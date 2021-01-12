@@ -705,6 +705,12 @@ button:focus {
   padding: 0 65px;
 }
 
+#above-the-fold .fp-bg {
+  background: linear-gradient($background-gradient-top, $background-gradient-bottom), url(../stock-photos/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center 80%;
+}
+
 /*
 .fp-controlArrow {
   top: unset;
