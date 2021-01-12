@@ -711,7 +711,54 @@ button:focus {
   background: linear-gradient($background-gradient-top, $background-gradient-bottom),url(../stock-photos/limor-zellermayer-pn_HsW0jMls-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+}
+
+/* Bottom of section shape to show there's more page content */
+.section-next-page-shape {
+  clip-path: polygon(0% calc(100% - 70px), calc(50% - 50px) calc(100% - 70px), 50% calc(100% - 15px), calc(50% + 50px) calc(100% - 70px), 100% calc(100% - 70px), 100% 0%, 0% 0%);
+  margin-bottom: -70px;
+  z-index: 100;
+}
+
+.section .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .section-next-page-shape {
+    clip-path: polygon(0% calc(100% - 35px), calc(50% - 25px) calc(100% - 35px), 50% calc(100% - 5px), calc(50% + 25px) calc(100% - 35px), 100% calc(100% - 35px), 100% 0%, 0% 0%);
+    margin-bottom: -35px;
+  }
+
+  .section .container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+.section-next-page-shape#above-the-fold {
+  z-index: 1000;
+}
+
+.section-next-page-shape.section-1 {
+  z-index: 900;
+}
+
+.section-lead {
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  font-size: 54px;
+}
+
+$s1-background-gradient-bottom: adjust-color($base-shade-bold, $alpha: -0.1);
+$s1-background-gradient-top: adjust-color($base-shade-muted, $alpha: -0.1);
+.section-1 {
+  //background: linear-gradient(rgba(49,54,98,0.9), rgba(95,66,222,0.9)),url(https://images.unsplash.com/photo-1565101845408-7a1b0c6b4860?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80) no-repeat;
+  background: linear-gradient($s1-background-gradient-top, $s1-background-gradient-bottom),url(https://images.unsplash.com/photo-1565101845408-7a1b0c6b4860?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*
