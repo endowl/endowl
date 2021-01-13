@@ -1,34 +1,34 @@
-<div class="footer-section">
-    <div class="footer-section-bg-graphics">
-        <img src="{{ "/assets/images/footer-section-bg.png" | relative_url }}">
+<!--
+<div class="footer-section-bg-graphics">
+    <img src="{{ "/assets/images/footer-section-bg.png" | relative_url }}">
+</div>
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-12 footer-logo">
+            <img src="{{ "/assets/images/new-logo/Endowl%20Icon%20Light.png" | relative_url }}">
+        </div>
     </div>
 
-    <div class="container footer-container">
-        <div class="col-lg-3 col-md-6 footer-logo">
-            <div>
-                {%- include svg/logo.svg -%}
-            </div>
-            <a href="{{ "/estate-planning-glossary" | relative_url }}">Glossary</a><br>
-        </div>
-        <div class="col-lg-3 col-md-6 footer-subsection">
+    <div class="row">
+        <div class="col-md-4 col-12 footer-subsection">
             <div class="footer-subsection-2-1">
                 <h3 class="footer-subsection-title">Links</h3>
                 <a href="{{ "/index.html#top" | relative_url }}">Home</a><br>
                 <a href="{{ "/index.html#inheritance" | relative_url }}">About</a><br>
                 <a href="{{ "/index.html#team" | relative_url }}">Team</a><br>
                 <a href="{{ "/blog/" | relative_url }}">Blog</a><br>
+                <a href="{{ "/estate-planning-glossary" | relative_url }}">Glossary</a><br>
                 <a href="{{ "/privacy" | relative_url }}">Privacy Notice</a><br>
                 <a href="{{ "/terms" | relative_url }}">Terms of Use</a><br>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6 footer-subsection">
-            <h3 class="footer-subsection-title">Contact Us</h3>
-            <ul class="footer-subsection-list">
-                <li><a href="mailto:info@endowl.com">info@endowl.com</a></li>
-                <li><a href="{{ "/index.html#top" | relative_url }}">Sign up for updates</a></li>
-            </ul>
+        <div class="col-md-4 col-12 footer-subsection">
+            <h3 class="footer-subsection-title">Contact</h3>
+            <a href="mailto:info@endowl.com">info@endowl.com</a><br>
+            <a href="{{ "/index.html#top" | relative_url }}">Sign up for updates</a><br>
         </div>
-        <div class="col-lg-3 col-md-6 footer-subsection">
+        <div class="col-md-4 col-12 footer-subsection">
             <div class="footer-subsection-2-2">
                 <h3 class="footer-subsection-title">Social</h3>
                 <div class="footer-social-media-icons-section">
@@ -49,8 +49,18 @@
         </div>
     </div>
 
-    <div class="container footer-credits">
-        <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p><br/>
+    <div class="footer-credits">
+        <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+        <p>
+            Photos by:
+            <a href="https://unsplash.com/@limorganon" target="_blank">Limor Zellermayer</a>,
+            <a href="https://unsplash.com/@judebeck" target="_blank">Jude Beck</a>
+            <a href="https://unsplash.com/@simonrae" target="_blank">Simon Rae</a>
+            <a href="https://unsplash.com/@darvalife" target="_blank">Dario Valenzuela</a>
+            <a href="https://unsplash.com/@alexiby" target="_blank">Alex Iby</a>
+            <a href="https://unsplash.com/@goumbik" target="_blank">Lukas Blazek</a>
+            <a href="https://unsplash.com/@davidboca" target="_blank">David Boca</a>
+        </p>
         <p>© 2020 <a href="{{ "/index.html#top" | relative_url }}" title="Endowl, Inc">Endowl</a>™, Inc. All Rights
             Reserved.</p>
     </div>
@@ -58,7 +68,6 @@
 
 <!-- FOOTER SCRIPTS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 <!-- Header scroll -->

@@ -1,5 +1,5 @@
 .signup-form {
-  margin-top: 5rem;
+  //margin-top: 5rem;
   padding: 20px;
   background-color: adjust-color($contrast-shade, $alpha: -0.3);
   border-radius: 10px;
@@ -8,14 +8,20 @@
     font-size: 0.8rem;
     margin-bottom: 0.1rem;
   }
+  .hs_email label {
+    display: none;
+  }
   $recaptcha-rescale-factor: 0.75;
   .hs_recaptcha {
     float: right;
     margin-top: 0.5rem;
+    visibility: hidden;
+    height: 1px;
   }
   .hs-submit {
-    float: left;
-    margin-top: 0.8rem;
+    //float: left;
+    //margin-top: 0.8rem;
+    width: 100%;
   }
   .grecaptcha-badge {
     transform:scale($recaptcha-rescale-factor);
@@ -45,5 +51,6 @@
   .hs-button {
     @extend .btn;
     @extend .btn-primary;
+    width: 100%;
   }
 }
