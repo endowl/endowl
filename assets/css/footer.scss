@@ -1,9 +1,16 @@
+/*
 .footer-section {
   padding-top: 75px;
   padding-bottom: 55px;
   margin-bottom: 0px !important;
   position: relative;
   background-color: $base-shade-dark;
+  z-index: 100;
+}
+*/
+
+.section-footer {
+  //background-color: $base-shade-dark;
   z-index: 100;
 }
 
@@ -17,15 +24,6 @@
   display: flex;
   position: relative;
 }
-
-/*
-.footer-logo {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  padding-right: 40px;
-}
-*/
 
 .footer-logo {
   text-align: center;
@@ -119,7 +117,6 @@
 
 .footer-credits {
   padding-top: 10px;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   text-align: center;
