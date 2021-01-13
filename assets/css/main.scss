@@ -291,7 +291,8 @@ button:focus {
   font-size: 27px;
   font-weight: 400;
   line-height: 1.5;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  //padding-bottom: 10px;
 }
 
 .header-title {
@@ -389,6 +390,7 @@ button:focus {
 
   .header-subtitle {
     font-size: 20px;
+    line-height: 1.2;
   }
 
   .header-title {
@@ -737,14 +739,6 @@ button:focus {
   }
 }
 
-.section-next-page-shape#above-the-fold {
-  z-index: 1000;
-}
-
-.section-next-page-shape.section-1 {
-  z-index: 900;
-}
-
 .section-lead {
   position: absolute;
   top: 40px;
@@ -752,13 +746,47 @@ button:focus {
   font-size: 54px;
 }
 
+.section-next-page-shape#above-the-fold {
+  z-index: 1000;
+}
+
 $s1-background-gradient-bottom: adjust-color($base-shade-bold, $alpha: -0.1);
 $s1-background-gradient-top: adjust-color($base-shade-muted, $alpha: -0.1);
 .section-1 {
-  //background: linear-gradient(rgba(49,54,98,0.9), rgba(95,66,222,0.9)),url(https://images.unsplash.com/photo-1565101845408-7a1b0c6b4860?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80) no-repeat;
-  background: linear-gradient($s1-background-gradient-top, $s1-background-gradient-bottom),url(https://images.unsplash.com/photo-1565101845408-7a1b0c6b4860?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80) no-repeat;
+  background: linear-gradient($s1-background-gradient-top, $s1-background-gradient-bottom),url(../stock-photos/jude-beck-kPeugAckSPo-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 900;
+}
+
+$s2-background-gradient-bottom: adjust-color($base-shade-bright, $alpha: -0.1);
+$s2-background-gradient-top: adjust-color($base-shade-light, $alpha: -0.1);
+.section-2 {
+  background: linear-gradient($s2-background-gradient-top, $s2-background-gradient-bottom),url(../stock-photos/simon-rae-jJYlr6H1ClM-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 800;
+}
+
+.section-3 {
+  background: linear-gradient($background-gradient-top, $background-gradient-bottom),url(../stock-photos/simon-rae-Ppckx1ce6SM-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 700;
+}
+
+.section-4 {
+  background: linear-gradient($background-gradient-top, $background-gradient-bottom),url(../stock-photos/dario-valenzuela-PAGBeJrLiDA-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 600;
+}
+
+.section-5 {
+  background: linear-gradient($background-gradient-top, $background-gradient-bottom),url(../stock-photos/alex-iby-QOPfXH-PGwk-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 500;
 }
 
 /*
