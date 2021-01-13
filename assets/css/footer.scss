@@ -4,6 +4,7 @@
   margin-bottom: 0px !important;
   position: relative;
   background-color: $base-shade-dark;
+  z-index: 100;
 }
 
 .footer-section-bg-graphics {
@@ -17,15 +18,22 @@
   position: relative;
 }
 
+/*
 .footer-logo {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
   padding-right: 40px;
 }
+*/
+
+.footer-logo {
+  text-align: center;
+}
 
 .footer-logo img {
-  width: 125px;
+  width: 150px;
+  max-width: 100%;
   margin-bottom: 15px;
 }
 
@@ -110,7 +118,7 @@
 }
 
 .footer-credits {
-  padding-top: 40px;
+  padding-top: 10px;
   /* display: flex; */
   justify-content: center;
   align-items: center;

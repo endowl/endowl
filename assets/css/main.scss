@@ -637,6 +637,10 @@ button:focus {
   max-width: 100%;
 }
 
+.section h2 {
+  padding-bottom: 10px;
+}
+
 #about-section {
   position: relative;
   top: -($nav-link-padding-y + $line-height-base);
@@ -719,7 +723,7 @@ button:focus {
 .section-next-page-shape {
   clip-path: polygon(0% calc(100% - 70px), calc(50% - 50px) calc(100% - 70px), 50% calc(100% - 15px), calc(50% + 50px) calc(100% - 70px), 100% calc(100% - 70px), 100% 0%, 0% 0%);
   margin-bottom: -70px;
-  z-index: 100;
+  //z-index: 100;
 }
 
 .section .container {
@@ -776,17 +780,42 @@ $s2-background-gradient-top: adjust-color($base-shade-light, $alpha: -0.1);
 }
 
 .section-4 {
-  background: linear-gradient($background-gradient-top, $background-gradient-bottom),url(../stock-photos/dario-valenzuela-PAGBeJrLiDA-unsplash.jpg) no-repeat;
+  background: linear-gradient($s1-background-gradient-top, $s1-background-gradient-bottom),url(../stock-photos/dario-valenzuela-PAGBeJrLiDA-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   z-index: 600;
 }
 
 .section-5 {
-  background: linear-gradient($background-gradient-top, $background-gradient-bottom),url(../stock-photos/alex-iby-QOPfXH-PGwk-unsplash.jpg) no-repeat;
+  background: linear-gradient($s2-background-gradient-top, $s2-background-gradient-bottom),url(../stock-photos/alex-iby-QOPfXH-PGwk-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   z-index: 500;
+}
+
+.section-6 {
+  background: linear-gradient($s1-background-gradient-top, $s1-background-gradient-bottom),url(../stock-photos/lukas-blazek-GnvurwJsKaY-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 400;
+}
+
+.section-7 {
+  background: linear-gradient($background-gradient-top, $s2-background-gradient-bottom),url(../stock-photos/charles-deluvio-jt4yQ3yp9Z4-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 300;
+}
+
+.section-team {
+  text-align: center;
+}
+.section-team p {
+  text-align: justify;
+}
+.section-team .headshot {
+  border-radius: 50%;
+  width: 75%;
 }
 
 /*
