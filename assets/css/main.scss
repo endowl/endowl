@@ -339,15 +339,15 @@ button:focus {
   }
 
   .navbar-collapse {
-    background-color: $contrast-shade;
-    color: $base-shade-dark;
+    background-color: $base-shade-dark;
+    color: $contrast-shade;
     padding-bottom: 20px;
     padding-top: 20px;
     margin-bottom: 20px;
   }
 
   .navbar-collapse .nav-link-menu {
-    color: $base-shade-dark;
+    color: $contrast-shade;
   }
 
   .nav-link-number {
