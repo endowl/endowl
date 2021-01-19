@@ -424,8 +424,14 @@ button:focus {
   }
   .photo-credit {
     font-size: .8rem;
-    a {
-      color: $base-shade-dark;
+  }
+  a {
+    color: inherit;
+    text-decoration: underline $complimentary-shade-muted;
+    &:hover {
+      color: $base-shade-bold;
+      font-weight: bold;
+      text-decoration: underline $complimentary-shade-bright;
     }
   }
 }
