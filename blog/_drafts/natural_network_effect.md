@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Natural Network Effect
-subtitle: Estate plans document the connections in the intergenerational human social network
+subtitle: An estate plan documents the connections in the intergenerational human social network
 image: ../../assets/stock-photos/austin-distel-60caCHdOqH0-unsplash.jpg
 photoCreditText: Austin Distel
 photoCreditUrl: https://unsplash.com/@austindistel
