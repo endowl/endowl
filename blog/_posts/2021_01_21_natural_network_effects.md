@@ -21,3 +21,4 @@ With people like guardians, trustees, and will executors, you should be ready to
 
 ## Staying Connected 
 With the Endowl app, your network will be a lot more organized and easy to manage than with a typical estate plan. Every party named in your will, with the exception of children under the age of 18, will receive an invitation to install the app when they are added to the plan. This allows them to actively be a part of your estate so they can become familiar with their role early on. They will receive notifications when any changes are made, and be able to see everything right in the app. This way, you’ll know for a fact that your network is always up to date with everything estate plan wise, completely avoiding any complex situations that could be encountered with a different legacy planning process. Endowl will keep your loved ones connected in the ways that matter most. 
+
