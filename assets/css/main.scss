@@ -416,8 +416,18 @@ button:focus {
     }
   }
   .signup-form {
-    background-color: $base-shade-dark;
-    color: $contrast-shade;
+    //background-color: $base-shade-dark;
+    //color: $contrast-shade;
+    background-color: #cfc7f5;
+    border: 1px solid $base-shade-muted;
+    a {
+      text-decoration: none;
+      &:hover {
+        font-weight: normal;
+        color: $complimentary-shade-bright;
+        text-decoration: underline $complimentary-shade-bright;
+      }
+    }
   }
   .text {
     font-size: 1.2rem;
