@@ -133,6 +133,19 @@
   font-weight: 700;
 }
 
+.photo-credits {
+  span + span:last-child {
+    &::before {
+      content: " and ";
+    }
+  }
+  span:nth-of-type(n + 2):not(:last-child) {
+    &::before {
+      content: ", ";
+    }
+  }
+}
+
 @media screen and (max-width: 991.98px) {
   .footer-container {
     flex-wrap: wrap;

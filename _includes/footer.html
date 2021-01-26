@@ -51,16 +51,14 @@
 
     <div class="footer-credits">
         <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-        <p>
+        {% if page.photo_credits %}
+        <p class="photo-credits">
             Photos by:
-            <a href="https://unsplash.com/@limorganon" target="_blank">Limor Zellermayer</a>,
-            <a href="https://unsplash.com/@judebeck" target="_blank">Jude Beck</a>
-            <a href="https://unsplash.com/@simonrae" target="_blank">Simon Rae</a>
-            <a href="https://unsplash.com/@darvalife" target="_blank">Dario Valenzuela</a>
-            <a href="https://unsplash.com/@alexiby" target="_blank">Alex Iby</a>
-            <a href="https://unsplash.com/@goumbik" target="_blank">Lukas Blazek</a>
-            <a href="https://unsplash.com/@davidboca" target="_blank">David Boca</a>
+            {% for photo_credit in page.photo_credits %}
+            <span><a href="{{ photo_credit.url }}" target="_blank">{{ photo_credit.name }}</a></span>
+            {% endfor %}
         </p>
+        {% endif %}
         <p>© 2020 <a href="{{ "/index.html#top" | relative_url }}" title="Endowl, Inc">Endowl</a>™, Inc. All Rights
             Reserved.</p>
     </div>
