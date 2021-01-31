@@ -31,7 +31,7 @@ margin-top: .25rem;
 <br/><br/>
 
 <div class="justify-content-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Zjo2fmRO00U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zjo2fmRO00U?t=7045" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/><br/>
 
 <div style="width: 800px;
