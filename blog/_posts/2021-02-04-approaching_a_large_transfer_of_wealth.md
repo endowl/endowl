@@ -2,7 +2,7 @@
 layout: post
 title: Approaching a Large Transfer of Wealth
 subtitle: As Baby Boomers are getting older, their wealth is starting to be transferred to their heirs. 
-image: ../../assets/stock-photos/alexander-mils-lCPhGxs7pww-unsplash.jpg
+image: ../../assets/stock-photos/alexander-mils-unsplash.jpg
 photoCreditText: Alexander Mils
 photoCreditUrl: https://unsplash.com/photos/lCPhGxs7pww
 ---
