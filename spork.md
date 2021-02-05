@@ -2,6 +2,9 @@
 layout: default
 title: Yay EthDenver!!!!
 photoCreditText: Austin Wright
+photo_credits: [
+{ name: "Austin Wright", url: "https://ethdenver.com" }
+]
 ---
 <style>
 #top {
