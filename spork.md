@@ -29,7 +29,7 @@ margin: .25rem 0;
 margin-top: .25rem;
 }
 .alfred {
-width: 300px;
+    max-width: 300px;
     background-color: white;
     border-radius: 150px;
     height: 300px;
@@ -46,7 +46,7 @@ body {
 
 }
 .section {
-width: 800px;
+    max-width: 800px;
 }
 </style>
 
@@ -61,7 +61,7 @@ width: 800px;
 <p>We are buidling again this year. We aren't sure exactly what we are building yet, so watch for us on Friday, February 12, 2021.</p>
 <br/>
 <div class="justify-content-center">
-<div style="width: 800px;
+<div style="max-width: 800px;
     background-color: white;
     padding: 25px;
     border-radius: 4px;">
