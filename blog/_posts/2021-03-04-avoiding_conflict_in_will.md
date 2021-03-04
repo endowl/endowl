@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keeping the Peace: Avoiding Family Conflict in Your Will
+title: Avoiding Family Conflict in Your Will
 subtitle: It can be hard to make everyone happy when putting family in your estate plan.
 image: ../../assets/stock-photos/pexels-ketut-subiyanto-4308042.jpg
 photoCreditText: Ketut Subiyanto
