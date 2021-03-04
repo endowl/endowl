@@ -6,7 +6,6 @@ image: ../../assets/stock-photos/pexels-ketut-subiyanto-4308042.jpg
 photoCreditText: Ketut Subiyanto
 photoCreditUrl: https://www.pexels.com/photo/anonymous-ethnic-couple-sitting-on-sofa-having-marriage-issues-4308042/
 ---
-
 When it comes to planning for your family’s future, it’s important to be certain that the choices you’re making are right for everyone. Of course, you want everyone to be happy and prevent as many arguments as possible. Without careful planning and decision making, your will could end up becoming a huge source of stress and conflict for the loved ones you leave behind.
 
 ## Getting it Right
