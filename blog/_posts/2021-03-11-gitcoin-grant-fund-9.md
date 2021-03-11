@@ -18,4 +18,4 @@ Right now, Endowl is participating in the 9th round of Gitcoin grants, and you c
 
 If losing all your crypto sounds terrible (it does), you won’t want to miss out on the opportunity to help Endowl make sure that never happens, and your heirs can easily acquire any assets you want to leave for them. 
 
-To donate, head on over to Endowl’s grant page and help away! 
+To donate, head on over to [Endowl’s grant page](https://gitcoin.co/grants/2074/crypto-inheritance-by-endowl) and help away! 
