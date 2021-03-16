@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Donate to Endowl in Gitcoin Grants Round 9
+title: Contribute to Endowl in Gitcoin Grants Round 9
 subtitle: Gitcoin provides a space for community funded projects to thrive.
 image: ../assets/stock-photos/gr9.png
 photoCreditText: Gitcoin Grants Round 9
