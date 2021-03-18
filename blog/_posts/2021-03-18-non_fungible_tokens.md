@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Art of Non-Fungible Token’s
+title: The Art of Non-Fungible Tokens
 subtitle: NFT’s are the new hottest thing. 
 image: ../assets/stock-photos/nick-chong-0bO235Rhqec-unsplash.jpg
 photoCreditText: Nick Chong
