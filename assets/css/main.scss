@@ -125,8 +125,10 @@ button:focus {
 
 /* 2. NAVBAR */
 .navbar {
+  display: unset;
+  top: 0;
   background-color: transparent;
-  padding-top: 15px;
+  padding-top: 0;
   padding-bottom: 15px;
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
@@ -137,6 +139,7 @@ button:focus {
   }
 
   &.scrolled {
+    top: 0;
     background-color: $base-shade-bold !important;
     -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
     box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
@@ -762,6 +765,19 @@ $s2-background-gradient-top: adjust-color($base-shade-light, $alpha: -0.1);
 .section-team .headshot {
   border-radius: 50%;
   width: 75%;
+}
+
+#offer-banner {
+  text-align: center;
+  background-color: blue;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  padding: 20px;
+  vertical-align: middle;
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
 
 /*
