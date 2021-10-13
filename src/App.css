@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  background-color: #3e2a94;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #E6B2F3;
+}

@@ -1,0 +1,103 @@
+.team {
+  background-image: url('TeamBackground.jpeg');
+  padding-top: 4px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFFFFF;
+}
+
+.team-intro {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgba( 0, 0, 0, 0.5);
+  box-shadow: 0px 11px 7px 3px rgba( 0, 0, 0, 0.5); 
+  padding: 16px;
+}
+
+.team-intro-title {
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.team-intro-title-emphasis {
+  color: #9780f9;
+}
+
+.team-emphasis {
+  color: #00FFC0;
+}
+
+.team-intro-primary {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.team-intro-secondary {
+  font-weight: 500;
+  text-align: left;
+}
+
+.team-hr {
+  width: 90%;
+  background-color: #FFFFFF;
+  margin: 8px 0px 8px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3px;
+}
+
+@media only screen and (min-width: 768px) {
+  .team-intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .team-intro-title {
+    font-size: 42px;
+  }
+
+  .team-intro-primary {
+    font-size: 30px;
+  }
+
+  .team-intro-secondary {
+    font-size: 22px;
+  }
+
+  .team-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1026px) {
+  .team-members {
+    width: 1026px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .team-intro-title {
+    font-size: 50px;
+  }
+
+  .team-intro-primary {
+    font-size: 25px;
+  }
+
+  .team-intro-secondary {
+    font-size: 16px;
+  }
+}

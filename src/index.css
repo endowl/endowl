@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Lota Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #3e2a94;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: Lota Grotesque;
+  src:
+    local('Black Italic'), url(./fonts/Black-Italic.otf) format('opentype'), font-type
+    local('Black'), url(./fonts/Black.otf) format('opentype'),
+    local('Bold Italic'), url(./fonts/Bold-Italic.otf) format('opentype'),
+    local('Bold'), url(./fonts/Bold.otf) format('opentype'),
+    local('Extra Light Italic'), url(./fonts/Extra-Light-Italic.otf) format('opentype'),
+    local('Extra Light'), url(./fonts/Extra-Light.otf) format('opentype'),
+    local('Light Italic'), url(./fonts/Light-Italic.otf) format('opentype'),
+    local('Light'), url(./fonts/Light.otf) format('opentype'),
+    local('Regular Italic'), url(./fonts/Regular-Italic.otf) format('opentype'),
+    local('Regular'), url(./fonts/Regular.otf) format('opentype'),
+    local('Semi Bold Italic'), url(./fonts/Semi-Bold-Italic.otf) format('opentype'),
+    local('Semi Bold'), url(./fonts/Semi-Bold.otf) format('opentype'),
+    local('Thin Italic'), url(./fonts/Thin-Italic.otf) format('opentype'),
+    local('Thin'), url(./fonts/Thin.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
