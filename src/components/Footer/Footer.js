@@ -61,8 +61,6 @@ function Footer(props) {
           {"Photos by: "}
           <a href="https://unsplash.com/photos/smJ6XsYy8gA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" className="footer-legal-content-links">Roberto Nickson</a>
           {", "}
-          <a href="https://unsplash.com/photos/44XRowmXF24?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" className="footer-legal-content-links">Gift Habeshaw</a>
-          {", "}
           <a href="https://unsplash.com/photos/smJ6XsYy8gA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" className="footer-legal-content-links">Patty Brito</a>
           {", "}
           <a href="https://unsplash.com/photos/smJ6XsYy8gA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" className="footer-legal-content-links">Art Rachen</a>
