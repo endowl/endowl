@@ -16,7 +16,6 @@ import Vision from "../Vision";
 import fg1 from "../../images/FG1.jpeg";
 import dc1 from "../../images/DC1.jpeg";
 import crypto1 from "../../images/Crypto1.jpeg";
-import bwl1 from "../../images/BWL1.jpeg";
 import feat1 from "../../images/Feat1.jpeg";
 import feat2 from "../../images/Feat2.jpeg";
 import feat3 from "../../images/Feat3.jpeg";
@@ -26,6 +25,7 @@ import ken from "../../images/Ken.jpeg";
 import morgan from "../../images/Morgan.jpeg";
 import logo from "../../images/Logo.png";
 import swag from "../../images/Swag.jpeg";
+import nft from "../../images/NFTAdobeLicensed.jpeg";
 
 import filecoin from "../../images/Filecoin.png";
 import consensys from "../../images/Consensys.png";
@@ -43,7 +43,7 @@ function Main(props) {
         <NewsItem img={fg1} headline={"Future Generations"}/>
         <NewsItem img={dc1} headline={"Digital Content"}/>
         <NewsItem img={crypto1} headline={"Cryptocurrency"}/>
-        <NewsItem img={bwl1} headline={"Built with ❤️"}/>
+        <NewsItem img={nft} headline={"Digital Art"}/>
       </News>
 
       <Vision />
