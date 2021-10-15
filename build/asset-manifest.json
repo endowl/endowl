@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.8ca0b63e.chunk.css",
-    "main.js": "/static/js/main.bc72b846.chunk.js",
-    "main.js.map": "/static/js/main.bc72b846.chunk.js.map",
+    "main.js": "/static/js/main.990e304d.chunk.js",
+    "main.js.map": "/static/js/main.990e304d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a4482c99.js",
     "runtime-main.js.map": "/static/js/runtime-main.a4482c99.js.map",
     "static/js/2.9f2b80e1.chunk.js": "/static/js/2.9f2b80e1.chunk.js",
@@ -13,7 +13,6 @@
     "static/css/main.8ca0b63e.chunk.css.map": "/static/css/main.8ca0b63e.chunk.css.map",
     "static/js/2.9f2b80e1.chunk.js.LICENSE.txt": "/static/js/2.9f2b80e1.chunk.js.LICENSE.txt",
     "static/media/Aaron.1583af9c.jpeg": "/static/media/Aaron.1583af9c.jpeg",
-    "static/media/BWL1.fc269b06.jpeg": "/static/media/BWL1.fc269b06.jpeg",
     "static/media/index.css": "/static/media/Thin.e1801c4d.otf",
     "static/media/Chain.358198c9.jpeg": "/static/media/Chain.358198c9.jpeg",
     "static/media/Consensys.afdf7167.png": "/static/media/Consensys.afdf7167.png",
@@ -32,6 +31,7 @@
     "static/media/Logo.6a616eda.png": "/static/media/Logo.6a616eda.png",
     "static/media/MeetOwlfred.0d242a65.png": "/static/media/MeetOwlfred.0d242a65.png",
     "static/media/Morgan.f869907e.jpeg": "/static/media/Morgan.f869907e.jpeg",
+    "static/media/NFTAdobeLicensed.c79c7a0b.jpeg": "/static/media/NFTAdobeLicensed.c79c7a0b.jpeg",
     "static/media/Product.e6488fba.jpeg": "/static/media/Product.e6488fba.jpeg",
     "static/media/Swag.5b02068e.jpeg": "/static/media/Swag.5b02068e.jpeg",
     "static/media/Team.css": "/static/media/TeamBackground.bc3173c8.jpeg"
@@ -40,6 +40,6 @@
     "static/js/runtime-main.a4482c99.js",
     "static/js/2.9f2b80e1.chunk.js",
     "static/css/main.8ca0b63e.chunk.css",
-    "static/js/main.bc72b846.chunk.js"
+    "static/js/main.990e304d.chunk.js"
   ]
 }
