@@ -44,7 +44,7 @@ function Footer(props) {
             
               <a href="https://twitter.com/EndowlApp" className="footer-contact-links-a">Twitter</a>
               <a href="https://www.facebook.com/EndowlApp/" className="footer-contact-links-a">Facebook</a>
-              {/* <a href="https://blog.endowl.com/" className="footer-contact-links-a">Blog</a> */}
+              <a href="https://www.youtube.com/channel/UCu_FwgBtP05Zfe7xix4C7zQ" className="footer-contact-links-a">YouTube</a>
               <a href="https://github.com/endowl" className="footer-contact-links-a">Github</a>
               <a href="https://owlfred-shop.creator-spring.com/" className="footer-contact-links-a">Swag Shop</a>
             

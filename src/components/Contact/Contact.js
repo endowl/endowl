@@ -5,6 +5,7 @@ import facebook from "../../images/Facebook.png";
 import twitter from "../../images/Twitter.png";
 import instagram from "../../images/Instagram.png";
 import github from "../../images/Github.png";
+import youtube from "../../images/YouTube.png";
 
 import "./Contact.css";
 
@@ -23,8 +24,8 @@ function Contact(props){
 
       <div className="contact-social-wrapper">
       <Social
-        images={[github, facebook, twitter, instagram]}
-        links={["https://github.com/endowl", "https://www.facebook.com/EndowlApp/", "https://twitter.com/EndowlApp", "https://www.instagram.com/endowlapp/"]}
+        images={[github, facebook, twitter, instagram, youtube]}
+        links={["https://github.com/endowl", "https://www.facebook.com/EndowlApp/", "https://twitter.com/EndowlApp", "https://www.instagram.com/endowlapp/", "https://www.youtube.com/channel/UCu_FwgBtP05Zfe7xix4C7zQ"]}
       />
       </div>
     </div>
