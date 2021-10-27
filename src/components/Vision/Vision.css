@@ -51,40 +51,45 @@
 @media only screen and (min-width: 768px) {
   .vision {
     position: relative;
-    top: calc(-15em + 15vw);
   }
-
+  
   .vision-title {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   .vision-text {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   .vision-image {
     max-width: 700px;
     max-height: 400px;
   }
 }
 
-@media only screen and (min-width: 1026px) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   .vision {
     top: calc(-15em + 15vw);
   }
 }
 
-@media only screen and (min-width: 1166px) {
+@media only screen and (min-width: 1026px) and (orientation: portrait) {
+  .vision {
+    top: calc(-15em + 15vw);
+  }
+}
+
+@media only screen and (min-width: 1166px) and (orientation: portrait) {
   .vision {
     top: calc(-18em + 15vw);
   }
 }
 
-@media only screen and (min-width: 1324px) {
+@media only screen and (min-width: 1324px) and (orientation: portrait) {
   .vision {
     top: calc(-21em + 18vw);
   }

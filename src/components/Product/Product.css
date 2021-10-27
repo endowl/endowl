@@ -38,16 +38,18 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .product {
-    margin-top: calc(-190px + 11vw);
-  }
-
   .product-content {
     max-width: 700px;
   }
 }
 
-@media only screen and (min-width: 1166px) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .product {
+    margin-top: calc(-190px + 11vw);
+  }
+}
+
+@media only screen and (min-width: 1166px) and (orientation: portrait) {
   .product {
     margin-top: calc(-240px + 11vw);
   }
