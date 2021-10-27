@@ -15,6 +15,7 @@
   height: 11vw;
   max-width: 60px;
   max-height: 60px;
+  border-radius: 3px;
 }
 
 .social-link-bar {
