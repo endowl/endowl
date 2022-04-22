@@ -13,7 +13,7 @@ function Sponsors(props) {
           </div>
         )}
       </div>
-      <a href="invest.endowl.com" className="sponsors-cta-link">
+      <a href="https://invest.endowl.com" className="sponsors-cta-link">
         <div className="sponsors-cta">
           Become a featured supporter! Endowl's Rolling SAFE is now available to accredited investors.
         </div>
